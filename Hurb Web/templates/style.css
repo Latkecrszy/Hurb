@@ -92,7 +92,7 @@
 
 
 body{
-    background-color: #15191C;
+    background-color: #050507;
     color: #FFFFFF;
     margin: 0px;
 }
@@ -101,7 +101,7 @@ body{
     width: 100%;
     margin: 0%;
     height: 4%;
-    background: #15191C;
+    background: #050507;
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
     overflow: hidden;
     /*padding: 20px 10px;*/
@@ -154,7 +154,7 @@ body{
     padding-top: 220px;
     align-items: center;
     height: 92%;
-    background: #15191C;
+    background: #050507;
     overflow: hidden;
     padding: 20px;
     top: 12%;
@@ -210,8 +210,8 @@ body{
 }
 
 .add_button{
-    width: 20%;
-    height: 12%;
+    width: 270px;
+    height: 90px;
 
     background-color: #402281;
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
@@ -221,7 +221,7 @@ body{
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 27px;
     line-height: 130.5%;
     align-items: center;
     vertical-align: middle;
@@ -234,22 +234,22 @@ body{
 }
 
 .features_button{
-    width: 20%;
-    height: 12%;
+    width: 270px;
+    height: 90px;
     line-height: 38px;
     margin-left: 20px;
-    border: 7px solid #1E2126;
+    border: 8px solid #1E2126;
     box-sizing: border-box;
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
     border-radius: 30px;
     text-align: center;
     vertical-align: center;
-    background: #15191c;
+    background: #050507;
 
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 27px;
     line-height: 130.5%;
     align-items: center;
     margin-top: 30px;
@@ -283,7 +283,7 @@ body{
     margin-top: 55%;
     align-items: center;
     height: auto;
-    background: #15191C;
+    background: #050507;
     overflow: hidden;
     padding: 20px;
     text-align: center;
@@ -318,7 +318,7 @@ body{
     /*margin-top: 55%;
     align-items: center;
     height: auto;
-    background: #15191C;
+    background: #050507;
     overflow: hidden;
     padding: 20px;
     text-align: center;
@@ -666,6 +666,7 @@ body{
     position: absolute;
     top: 300px;
     left: -100px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 
@@ -691,6 +692,7 @@ body{
     position: absolute;
     top: 300px;
     left: 100px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .footer{
@@ -700,7 +702,7 @@ body{
     /*padding-top: 220px;*/
     align-items: center;
     height: auto;
-    background: #15191C;
+    background: #050507;
     float: left;
 }
 
@@ -750,8 +752,8 @@ body{
 }
 
 .add_button_2{
-    width: 20%;
-    height: 20%;
+    width: 270px;
+    height: 90px;
 
     background-color: #402281;
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
@@ -829,14 +831,161 @@ body{
     box-shadow: 20px 30px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
 }
 
+
+.shapes_l{
+transition: mix-blend-mode 4s ease;
+
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: -50px;
+  opacity: 10%;
+  overflow: hidden;
+  mix-blend-mode: normal;
+
+  animation: shapes_load 10s ease forwards;
+}
+
+.shapes_r{
+  transition: mix-blend-mode 4s ease;
+
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 410px;
+  right: -10px;
+  opacity: 70%;
+  overflow: hidden;
+  mix-blend-mode: normal;
+
+  animation: shapes_load 10s ease forwards;
+}
+
+.shapes_l:hover, .shapes_r:hover{
+  mix-blend-mode: screen;
+}
+
+/*.shapes_l:hover, .shapes_r:hover{
+  transform: rotate(10deg);
+}
+
+.shapes_left #shape_1, .shapes_left #shape_2, .shapes_left #shape_3, .shapes_left #shape_4, .shapes_left #shape_5, shape_6, shape_7, .shapes_right #shape_8, .shapes_right #shape_9, .shapes_right #shape_10 {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.shapes_left:hover #shape_1, .shapes_left:hover #shape_2, .shapes_left:hover #shape_3, .shapes_left:hover #shape_4, .shapes_left:hover #shape_5, .shapes_right:hover #shape_6, .shapes_right:hover #shape_7, .shapes_right:hover #shape_8, .shapes_right:hover #shape_9, .shapes_right:hover #shape_10 {
+  animation-play-state: running;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}*/
+
+@keyframes shapes_load {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 70%;
+  }
+}
+
+
+
+
+/*
 .shape_1{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     border-radius: 20px;
     fill: #ffffff;
     z-index: 1000;
     float: left;
-    position: relative;
+    position: absolute;
+    background-color: #0094C6;
+    left: 80px;
+    top: 50px;
+    transform: rotate(40deg);
+}
+
+.shape_2{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  position: absolute;
+  background-color: #FA8128;
+  left: 15px;
+  top: 170px;
+}
+
+.shape_3{
+  width: 100px;
+  height: 57.735px;
+  background: red;
+  position: relative;
+  background-color: #9F2042;
+  left: 30px;
+  top: -60px;
+  transform: rotate(20deg);
+}
+
+.shape_3::before{
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #9F2042;
+}
+
+.shape_3::after{
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #9F2042;
+}
+
+.shape_4{
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  left: -30px;
+  top: 130px;
+  transform: rotate(40deg);
+  position: absolute;
+  background-color: #F30AFF;
+}
+*/
+
+.shapes_left{
+  left: -100px;
+  top: -100px;
+  height: 450px;
+  /*width: 300px;*/
+}
+
+.shapes_right{
+  right: -100px;
+  top: 700px;
+  height: 400px;
 }
 
 .features_button, .h_login {

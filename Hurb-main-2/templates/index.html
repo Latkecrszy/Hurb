@@ -23,11 +23,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="lib/jquery.waypoints.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script type="text/javascript">
 $(window).scroll(function() {
     $('.graphic_1').each(function(){
@@ -48,7 +48,7 @@ $('.fade').css('visibility', 'hidden');
 
     <body>
         <div class="preloader" id="preloader">
-            <img src="spinner.svg" alt="spinner">
+            <img src="{{ url_for('static', filename='spinner.svg') }}" alt="spinner">
         </div>
 
         <!--<script>

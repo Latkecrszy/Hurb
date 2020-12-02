@@ -109,6 +109,8 @@ body{
     right: 0px;
     left: 0px;
     z-index: 0;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .h_links{
@@ -127,6 +129,8 @@ body{
     padding: 15px;
     float: left;
     text-align: center;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .h_login{
@@ -145,6 +149,8 @@ body{
     border-radius: 15px;
     text-align: center;
     vertical-align: center;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .main_content{
@@ -180,6 +186,8 @@ body{
     width: 284.61px;
     align-items: center;
     padding-top: 100px;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .path{
@@ -196,6 +204,11 @@ body{
     }
 }
 
+
+.logo:hover{
+    animation-play-state: paused;
+}
+
 .main_content h5{
     font-size: 50px;
     line-height: 75px;
@@ -207,16 +220,18 @@ body{
     font-weight: 600;
     font-size: 50px;
     line-height: 104.3%;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .add_button{
     width: 270px;
     height: 90px;
 
-    background-color: #402281;
+    background-color: #0f084b;
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
     border-radius: 30px;
-    border: 2px solid #402281;
+    border: 2px solid #0f084b;
 
     font-family: Josefin Sans;
     font-style: normal;
@@ -231,6 +246,8 @@ body{
     border: 2px solid #4CAF50; */
 
     color: #FFFFFF;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .features_button{
@@ -255,11 +272,20 @@ body{
     margin-top: 30px;
 
     color: #FFFFFF;
+
+    animation: loading-delay 7s ease forwards;
+}
+
+.add_button:hover, .add_button_2:hover{
+  background-color: #000000;
+  border: 8px solid #0f084b;
 }
 
 .features_link{
     text-decoration: none;
     color: #ffffff;
+
+    animation: loading-delay 7s ease forwards;
 }
 
 .login_prompt{
@@ -273,7 +299,19 @@ body{
     font-weight: 600;
     font-size: 22px;
     line-height: 130.5%;
+
+    animation: loading-delay 7s ease forwards;
 }
+
+@keyframes loading-delay {
+    0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+}
+
 
 
 .about{
@@ -304,10 +342,22 @@ body{
     font-weight: 500;
     font-size: 32px;
     line-height: 130.5%;
-    padding: 15%;
-    top: 280px;
-
-    align-items: center;
+    /* padding: 15%; */
+    top: 540px;
+    /* align-items: center; */
+    padding-top: 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    /* bottom: 0; */
+    /* overflow: hidden; */
+    /* vertical-align: middle; */
+    /* height: 900px;*/
 }
 
 
@@ -330,7 +380,7 @@ body{
 .features{
     align-items: center;
     text-align: center;
-    height: 3000px;
+    height: 3500px;
 }
 
 .feature_1, .feature_3, .feature_5{
@@ -340,8 +390,8 @@ body{
 .graphic_1, .graphic_3, .graphic_5{
     visibility: visible;
     float: left;
-    height: 45%;
-    width: 30%;
+    height: 60%;
+    width: 40%;
     margin-left: 10%;
     /*padding: 5%;*/
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
@@ -363,15 +413,18 @@ body{
 .h_text_1, .h_text_3, .h_text_5{
     visibility: visible;
     float: right;
+    height: 200px;
     width: 40%;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 360px;
     padding-right: 5%;
     padding-left: 5%;
     opacity: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     color: #FFFFFF;
     animation: ltr-anime 1.5s 4s ease forwards;
@@ -380,7 +433,7 @@ body{
 .text_1, .text_3, .text_5{
     visibility: visible;
     float: right;
-    width: 45%;
+    width: 40%;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
@@ -401,8 +454,8 @@ body{
 .graphic_2, .graphic_4, .graphic_6{
     visibility: visible;
     float: right;
-    height: 40%;
-    width: 30%;
+    height: 60%;
+    width: 40%;
     margin-right: 10%;
     /*padding: 5%;*/
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
@@ -424,15 +477,18 @@ body{
 .h_text_2, .h_text_4, .h_text_6{
     visibility: visible;
     float: left;
+    height: 200px;
     width: 40%;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 360px;
     padding-right: 5%;
     padding-left: 5%;
     opacity: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     color: #FFFFFF;
 
@@ -755,10 +811,10 @@ body{
     width: 270px;
     height: 90px;
 
-    background-color: #402281;
+    background-color: #0f084b;
     box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
     border-radius: 30px;
-    border: 2px solid #402281;
+    border: 2px solid #0f084b;
 
     font-family: Josefin Sans;
     font-style: normal;
@@ -988,13 +1044,17 @@ transition: mix-blend-mode 4s ease;
   height: 400px;
 }
 
-.features_button, .h_login {
+.features_button, .h_login, .add_button,  .add_button_2{
     transition-duration: 0.8s;
 }
 
 .features_button:hover, .h_login:hover{
     background-color: #ffffff;
     color: #000000;
+}
+
+.features_button:hover{
+  border: #ffffff;
 }
 
 .features_button:hover a, .h_login:hover a{

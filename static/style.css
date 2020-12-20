@@ -1862,3 +1862,136 @@ html{
 .moderation_fc:hover .fo_text_1{
     display: block;
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*404-page CSS begins here*/
+
+.fof-container{
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fof-text{
+    width: 100%;
+    position: relative;
+}
+
+.fof-text-p{
+    font-family: Poppins;
+    font-weight: 1000;
+    font-size: calc(80px + (300 - 80) * ((100vw - 300px)/(1600 - 300)));
+    line-height: 220px;
+    align-items: center;
+    letter-spacing: 0.5em;
+    box-sizing: border-box;
+    padding: 0 0 0 0.5em;
+    margin: 0%;
+    padding-top: 15vh;
+
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.fof-subtext{
+    height: 15vh;
+}
+
+.fof-subtext-p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(25px + (50 - 25) * ((100vw - 300px)/(1600 - 300)));
+    line-height: 75px;
+
+    color: #FFFFFF;
+}
+
+
+.fof-footer{
+    height: 30vh;
+}
+
+.fof-command-suggestions-p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px)/(1600 - 300)));
+    line-height: 25px;
+    margin-bottom: 5px;
+
+    color: #BDBDBD;
+
+}
+
+.fof-link-suggestions-text-p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px)/(1600 - 300)));
+    line-height: 25px;
+    margin-top: 0px;
+
+    color: #BDBDBD;
+}
+
+.fof-link-suggestions{
+    display: inline-flex;
+}
+
+.fof-links{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 48px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+
+    color: #F2F2F2;
+}
+
+@media screen and (max-width: 600px) {
+  .fof-link-suggestions{
+    display: inline;
+  }
+  .fof-links{
+      margin-top: 3vh;
+      margin-bottom: 2vh;
+      line-height: 16px;
+  }
+  .fof-text-p{
+      letter-spacing: 0.1em;
+      padding: 0 0 0 0.1em;
+      padding-top: 5vh;
+  }
+  .fof-subtext-p{
+      margin-top: 0px;
+  }
+}

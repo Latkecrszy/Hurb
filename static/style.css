@@ -1125,19 +1125,19 @@ html, body {
 
 /*additional cool styling*/
 
-.login_prompt a, .text_cmds a, .tandp a, .h_links a, .top_info a, .footer-links a{
+.login_prompt a, .text_cmds a, .tandp a, .h_links a, .top_info a, .the_project a, .resources a, .policies a{
     position: relative;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
     transition: color .4s ease-out;
 }
 
-.login_prompt a:hover, .text_cmds a:hover, .tandp a:hover, .h_links a:hover, .top_info a:hover, .footer-links a:hover{
+.login_prompt a:hover, .text_cmds a:hover, .tandp a:hover, .h_links a:hover, .top_info a:hover, .the_project a:hover, .resources a:hover, .policies a:hover{
     text-decoration: none;
     color: #ffffff;
 }
 
-.login_prompt a::after, .text_cmds a::after, .tandp a::after, .h_links a::after, .top_info a::after, .footer-links a::after{
+.login_prompt a::after, .text_cmds a::after, .tandp a::after, .h_links a::after, .top_info a::after, .the_project a::after, .resources a::after, .policies a::after{
     border-radius: 1em;
     border-top: .1em solid #ffffff;
     content: "";
@@ -1148,7 +1148,7 @@ html, body {
     transition: right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out;
 }
 
-.login_prompt a:hover::after, .text_cmds a:hover::after, .tandp a:hover::after, .h_links a:hover::after, .top_info a:hover::after, .footer-links a:hover::after{
+.login_prompt a:hover::after, .text_cmds a:hover::after, .tandp a:hover::after, .h_links a:hover::after, .top_info a:hover::after, .the_project a:hover::after, .resources a:hover::after, .policies a:hover::after{
     border-color: rgba(255, 255, 255, 0.75);
     animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
 }
@@ -1803,10 +1803,8 @@ html{
     text-decoration: none;
 }
 
-.footer_link {
-    text-decoration: none;
+.the_project a, .resources a, .policies a{
     color: white;
-    font-family: Poppins;
 }
 
 .footer_h{

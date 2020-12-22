@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---Favicons start-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='Favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='Favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='Favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='Favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='Favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='Favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='Favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='Favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='Favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='Favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='Favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='Favicons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='Favicons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='Favicons/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='Favicons/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+    <!---Favicons end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+    <link href="../static/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script type="text/javascript">
+$(window).scroll(function() {
+    $('.graphic_1').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+        $(this).addClass("ltr-anime");
+        }
+    });
+});
+
+$('.fade').css('visibility', 'hidden');
+    </script>
+
+    <title>Hurb | The Great Little Bot That Does It All</title>
+    </head>
+
+    <body>
+        <div class="preloader" id="preloader">
+            <img src="{{ url_for('static', filename='spinner.svg') }}" alt="spinner">
+        </div>
+
+        <header class="header">
+            <img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%">
+            <div class="h_links fade">
+                <span><a href="/landingpage">Home</a></span>
+                <span><a href="/status">Status</a></span>
+                <span><a href="/help">Help</a></span>
+                <div class="h_login">Login</div>
+            </div>
+        </header>
+
+<div class="tabs">
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">
+  <input type="radio" id="tab4" name="tab-control">
+  <input type="radio" id="tab5" name="tab-control">
+  <input type="radio" id="tab6" name="tab-control">
+  <ul>
+    <li title="Moderation">
+        <label for="tab1" role="button">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/>
+        </svg><br>
+        <span>Moderation</span>
+        </label>
+    </li>
+    <li title="Economy">
+        <label for="tab2" role="button">
+        <svg viewBox="0 0 24 24">
+            <g clip-path="url(#clip0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1C13.5 0.171573 12.8284 -0.5 12 -0.5C11.1716 -0.5 10.5 0.171573 10.5 1V3.5H9.5C8.17392 3.5 6.90215 4.02678 5.96447 4.96447C5.02678 5.90215 4.5 7.17392 4.5 8.5C4.5 9.82608 5.02678 11.0979 5.96447 12.0355C6.90215 12.9732 8.17392 13.5 9.5 13.5H10.5V17.5H6C5.17157 17.5 4.5 18.1716 4.5 19C4.5 19.8284 5.17157 20.5 6 20.5H10.5V23C10.5 23.8284 11.1716 24.5 12 24.5C12.8284 24.5 13.5 23.8284 13.5 23V20.5H14.5C15.8261 20.5 17.0979 19.9732 18.0355 19.0355C18.9732 18.0979 19.5 16.8261 19.5 15.5C19.5 14.1739 18.9732 12.9021 18.0355 11.9645C17.0979 11.0268 15.8261 10.5 14.5 10.5H13.5V6.5H17C17.8284 6.5 18.5 5.82843 18.5 5C18.5 4.17157 17.8284 3.5 17 3.5H13.5V1ZM10.5 6.5H9.5C8.96957 6.5 8.46086 6.71071 8.08579 7.08579C7.71071 7.46086 7.5 7.96957 7.5 8.5C7.5 9.03043 7.71071 9.53914 8.08579 9.91421C8.46086 10.2893 8.96957 10.5 9.5 10.5H10.5V6.5ZM13.5 13.5V17.5H14.5C15.0304 17.5 15.5391 17.2893 15.9142 16.9142C16.2893 16.5391 16.5 16.0304 16.5 15.5C16.5 14.9696 16.2893 14.4609 15.9142 14.0858C15.5391 13.7107 15.0304 13.5 14.5 13.5H13.5Z"/>
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg><br>
+        <span>Economy</span>
+        </label>
+    </li>
+    <li title="Auto">
+        <label for="tab3" role="button">
+        <svg viewBox="0 0 24 24">
+            <g clip-path="url(#clip0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3227 1.76125C12.5928 1.36983 10.7919 1.42302 9.08802 1.91586C7.392 2.40643 5.84719 3.31672 4.59636 4.56237L2.5 6.53222V4C2.5 3.17157 1.82843 2.5 1 2.5C0.171573 2.5 -0.5 3.17157 -0.5 4V9.99661V10C-0.5 10.1919 -0.463966 10.3754 -0.398295 10.544C-0.330586 10.7182 -0.228968 10.8826 -0.0931295 11.0272C0.0551291 11.185 0.229479 11.3035 0.416933 11.3825C0.582235 11.4523 0.76266 11.4933 0.951928 11.4992C0.970588 11.4998 0.989259 11.5001 1.00793 11.5C1.37366 11.4981 1.73961 11.3633 2.02716 11.0931L4.78684 8.5L6.66716 6.73314C6.67859 6.72241 6.68984 6.7115 6.70093 6.70041C7.59655 5.80434 8.70457 5.14975 9.9216 4.79772C11.1386 4.44569 12.425 4.4077 13.6607 4.68729C14.8964 4.96688 16.0411 5.55494 16.988 6.39659C17.935 7.23825 18.6533 8.30606 19.0759 9.50041C19.3523 10.2814 20.2094 10.6904 20.9904 10.4141C21.7714 10.1377 22.1804 9.28059 21.9041 8.49962C21.3124 6.82754 20.3068 5.33259 18.981 4.15428C17.6553 2.97596 16.0527 2.15268 14.3227 1.76125ZM24.0635 12.9422C23.7918 12.6691 23.4156 12.5 23 12.5H17C16.1716 12.5 15.5 13.1716 15.5 14C15.5 14.8284 16.1716 15.5 17 15.5H19.2132L17.3328 17.2669C17.3214 17.2776 17.3102 17.2885 17.2991 17.2996C16.4035 18.1957 15.2954 18.8503 14.0784 19.2023C12.8614 19.5543 11.575 19.5923 10.3393 19.3127C9.10363 19.0332 7.95891 18.4451 7.01196 17.6034C6.06502 16.7618 5.34671 15.694 4.92407 14.4996C4.64771 13.7186 3.79058 13.3096 3.00961 13.5859C2.22863 13.8623 1.81957 14.7194 2.09593 15.5004C2.68762 17.1725 3.69325 18.6674 5.01897 19.8458C6.34469 21.0241 7.9473 21.8474 9.67726 22.2388C11.4072 22.6302 13.2081 22.577 14.912 22.0842C16.608 21.5936 18.1528 20.6833 19.4036 19.4377L21.5 17.4678V20C21.5 20.8284 22.1716 21.5 23 21.5C23.8284 21.5 24.5 20.8284 24.5 20V14.0036V14C24.5 13.8016 24.4615 13.6123 24.3916 13.439C24.3348 13.2982 24.2558 13.1641 24.1543 13.042C24.1255 13.0074 24.0952 12.9741 24.0635 12.9422Z"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg><br>
+        <span>Auto</span>
+        </label>
+    </li>
+    <li title="NEC">
+        <label for="tab4" role="button">
+        <svg viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 12C3.5 7.30558 7.30558 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C7.30558 20.5 3.5 16.6944 3.5 12ZM12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5ZM7.1 12.8C7.75967 12.3053 8.69423 12.436 9.19305 13.0908L9.19306 13.0908L9.19353 13.0914C9.19665 13.0954 9.20496 13.1057 9.2183 13.1216C9.24508 13.1535 9.29148 13.2069 9.35642 13.2746C9.48752 13.4114 9.68673 13.5992 9.94476 13.7869C10.4666 14.1664 11.1633 14.5 12 14.5C12.8367 14.5 13.5334 14.1664 14.0552 13.7869C14.3133 13.5992 14.5125 13.4114 14.6436 13.2746C14.7085 13.2069 14.7549 13.1535 14.7817 13.1216C14.795 13.1057 14.8033 13.0954 14.8065 13.0914L14.8069 13.0909L14.8069 13.0908L14.807 13.0908C15.3058 12.436 16.2403 12.3053 16.9 12.8C17.5627 13.2971 17.6971 14.2373 17.2 14.9L16 14C17.2 14.9 17.1996 14.9005 17.1993 14.901L17.1985 14.902L17.1969 14.9041L17.1932 14.909L17.184 14.921C17.1771 14.93 17.1686 14.9408 17.1586 14.9535C17.1385 14.9789 17.1122 15.0115 17.0796 15.0502C17.0146 15.1277 16.9243 15.2306 16.8095 15.3504C16.5813 15.5886 16.2492 15.9008 15.8198 16.2131C14.9666 16.8336 13.6633 17.5 12 17.5C10.3367 17.5 9.0334 16.8336 8.18024 16.2131C7.75077 15.9008 7.41873 15.5886 7.19046 15.3504C7.0757 15.2306 6.98539 15.1277 6.92037 15.0502C6.88782 15.0115 6.86145 14.9789 6.84139 14.9535C6.83135 14.9408 6.82288 14.93 6.81598 14.921L6.80681 14.909L6.80311 14.9041L6.80148 14.902L6.80072 14.901C6.80036 14.9005 6.8 14.9 8 14L6.8 14.9C6.30294 14.2373 6.43726 13.2971 7.1 12.8ZM7.5 9C7.5 8.17157 8.17157 7.5 9 7.5H9.01C9.83843 7.5 10.51 8.17157 10.51 9C10.51 9.82843 9.83843 10.5 9.01 10.5H9C8.17157 10.5 7.5 9.82843 7.5 9ZM15 7.5C14.1716 7.5 13.5 8.17157 13.5 9C13.5 9.82843 14.1716 10.5 15 10.5H15.01C15.8384 10.5 16.51 9.82843 16.51 9C16.51 8.17157 15.8384 7.5 15.01 7.5H15Z"/>
+        </svg><br>
+        <span>NEC</span>
+    </label>
+    </li>
+    <li title="Ranking">
+        <label for="tab5" role="button">
+        <svg viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5742 3.61382C12.3973 3.54048 12.2034 3.5 12 3.5C11.7966 3.5 11.6027 3.54048 11.4258 3.61382C11.2489 3.68702 11.0832 3.79553 10.9393 3.93934L3.93934 10.9393C3.35355 11.5251 3.35355 12.4749 3.93934 13.0607C4.52513 13.6464 5.47487 13.6464 6.06066 13.0607L10.5 8.62132V19C10.5 19.8284 11.1716 20.5 12 20.5C12.8284 20.5 13.5 19.8284 13.5 19V8.62132L17.9393 13.0607C18.5251 13.6464 19.4749 13.6464 20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L13.0607 3.93934C12.9168 3.79553 12.7511 3.68702 12.5742 3.61382Z"/>
+        </svg><br>
+        <span>Ranking</span>
+    </label>
+    </li>
+    <li title="Fun">
+        <label for="tab6" role="button">
+        <svg viewBox="0 0 24 24">
+            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/>
+        </svg><br>
+        <span>Fun</span>
+    </label>
+    </li>
+</ul>
+
+  <div class="slider"><div class="indicator"></div></div>
+
+    <div id="moderation-tab-content" class="content">
+        <section>
+            <p class="tab-header">Moderation</p>
+            <button class="accordion">%mute</button>
+            <div class="panel">
+              <p>sample. Mutes a user.</p>
+            </div>
+
+            <button class="accordion">%unmute</button>
+            <div class="panel">
+              <p>sample. Unmutes a user.</p>
+            </div>
+
+            <button class="accordion">%kick</button>
+            <div class="panel">
+              <p>sample. Kicks the hell out of an user.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="economy-tab-content" class="tabcontent">
+        <section>
+            <p>Economy</p>
+        </section>
+    </div>
+
+    <div id="auto-tab-content" class="tabcontent">
+        <section>
+            <p>Auto</p>
+        </section>
+    </div>
+
+    <div id="nec-tab-content" class="tabcontent">
+        <section>
+            <p>NEC</p>
+        </section>
+    </div>
+
+    <div id="ranking-tab-content" class="tabcontent">
+        <section>
+            <p>Ranking</p>
+        </section>
+    </div>
+
+    <div id="fun-tab-content" class="tabcontent">
+        <section>
+            <p>Fun</p>
+        </section>
+    </div>
+
+    </div>
+        <script>
+//short pre-loader animation
+const preloader = document.querySelector('.preloader');
+
+const fadeEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+window.addEventListener('load', fadeEffect);
+        </script>
+
+
+        <script>
+function openTab(evt, tabName) {
+  var i, content, tablinks;
+
+  tabcontent = document.getElementsByClassName("content");
+  for (i = 0; i < content.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" activeness", "");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " activeness";
+}
+        </script>
+
+
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+        </script>
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+        </script>
+    </body>
+</html>

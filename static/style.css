@@ -624,6 +624,7 @@ body{
     margin-left: 5%;
     border: 2px rgb(255, 255, 255, 1);
     animation: ltr-anime 1.5s 4s ease forwards;
+    transition: box-shadow 0.5s;
 }
 
 .h_text_1, .h_text_3, .h_text_5{
@@ -688,6 +689,7 @@ body{
     margin-right: 5%;
     border: 2px rgb(255, 255, 255, 1);
     animation: ltr-anime 1.5s 4s ease forwards;
+    transition: box-shadow 0.5s;
 }
 
 .h_text_2, .h_text_4, .h_text_6{
@@ -725,6 +727,10 @@ body{
     text-align: right;
     color: #FFFFFF;
     animation: ltr-anime 1.5s 4s ease forwards;
+}
+
+.graphic_1:hover, .graphic_2:hover, .graphic_3:hover, .graphic_4:hover, .graphic_5:hover, .graphic_6:hover{
+    box-shadow: 20px 20px 20px rgb(0 0 0);
 }
 
 .feature_1{
@@ -1999,4 +2005,151 @@ html{
   .fof-subtext-p{
       margin-top: 0px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Commands page CSS begins here*/
+
+
+.command-tabs {
+    overflow: hidden;
+    background-color: #050507;
+    padding-top: 5vh;
+    align-items: center;
+    border-bottom: 2px #FF0066;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.command-tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.command-tabs button:hover {
+    background-color: #15191C;
+}
+
+.tablinks p{
+    display: none;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.tablinks:hover p{
+    display: block;
+}
+
+
+.command-tabs button.activeness {
+    width: 10vw;
+    height: auto;
+}
+
+.moderation-tab-img{
+    border-bottom: 4px #ffffff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 1vh 3vh;
+    border-top: none;
+}
+
+.moderation-tab-img, .economy-tab-img, .auto-tab-img, .nec-tab-img, .ranking-tab-img, .fun-tab-img{
+    width: 5vw;
+    height: auto;
+}
+
+.moderation-tab-img:hover, .economy-tab-img:hover, .auto-tab-img:hover, .nec-tab-img:hover, .ranking-tab-img:hover, .fun-tab-img:hover{
+    width: 6vw;
+    height: auto;
+    filter: none;
+    transition: 0.3s;
+}
+
+.tab-header{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.accordion {
+  background-color: #15191C;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin-top: 3vh;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.active, .accordion:hover {
+  background-color: #15191C;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.panel{
+  padding: 0 18px;
+  background-color: #15191C;
+  color: white;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  border-radius: 0px 0px 10px 10px;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 16px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
 }

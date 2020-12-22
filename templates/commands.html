@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---Favicons start-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='Favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='Favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='Favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='Favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='Favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='Favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='Favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='Favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='Favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='Favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='Favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='Favicons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='Favicons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='Favicons/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='Favicons/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+    <!---Favicons end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+    <link href="../static/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script type="text/javascript">
+$(window).scroll(function() {
+    $('.graphic_1').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+        $(this).addClass("ltr-anime");
+        }
+    });
+});
+
+$('.fade').css('visibility', 'hidden');
+    </script>
+
+    <title>Hurb | The Great Little Bot That Does It All</title>
+    </head>
+
+    <body>
+        <div class="preloader" id="preloader">
+            <img src="{{ url_for('static', filename='spinner.svg') }}" alt="spinner">
+        </div>
+
+        <header class="header">
+            <img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%">
+            <div class="h_links fade">
+                <span><a href="/landingpage">Home</a></span>
+                <span><a href="/status">Status</a></span>
+                <span><a href="/help">Help</a></span>
+                <div class="h_login">Login</div>
+            </div>
+        </header>
+
+        <div class="command-tabs">
+            <button class="tablinks" onclick="openTab(event, 'moderation-tab-content')"><img src="../static/images/Moderation.svg" class="moderation-tab-img"><br><p>Moderation</p></button>
+            <button class="tablinks" onclick="openTab(event, 'economy-tab-content')"><img src="../static/images/Economy.svg" class="economy-tab-img"><br><p>Economy</p></button>
+            <button class="tablinks" onclick="openTab(event, 'auto-tab-content')"><img src="../static/images/Auto.svg" class="auto-tab-img"><br><p>Auto</p></button>
+            <button class="tablinks" onclick="openTab(event, 'nec-tab-content')"><img src="../static/images/NEC.svg" class="nec-tab-img"><br><p>NEC</p></button>
+            <button class="tablinks" onclick="openTab(event, 'ranking-tab-content')"><img src="../static/images/Ranking.svg" class="ranking-tab-img"><br><p>Ranking</p></button>
+            <button class="tablinks" onclick="openTab(event, 'fun-tab-content')"><img src="../static/images/Fun.svg" class="fun-tab-img"><br><p>Fun</p></button>
+        </div>
+
+        <div id="moderation-tab-content" class="tabcontent">
+            <p class="tab-header">Moderation</p>
+            <button class="accordion">%mute</button>
+            <div class="panel">
+              <p>sample. Mutes a user.</p>
+            </div>
+
+            <button class="accordion">%unmute</button>
+            <div class="panel">
+              <p>sample. Unmutes a user.</p>
+            </div>
+
+            <button class="accordion">%kick</button>
+            <div class="panel">
+              <p>sample. Kicks the hell out of an user.</p>
+            </div>
+        </div>
+
+        <div id="economy-tab-content" class="tabcontent">
+            <p>Economy</p>
+        </div>
+
+        <div id="auto-tab-content" class="tabcontent">
+            <p>Auto</p>
+        </div>
+
+        <div id="nec-tab-content" class="tabcontent">
+            <p>NEC</p>
+        </div>
+
+        <div id="ranking-tab-content" class="tabcontent">
+            <p>Ranking</p>
+        </div>
+
+        <div id="fun-tab-content" class="tabcontent">
+            <p>Fun</p>
+        </div>
+
+        </div>
+        <script>
+//short pre-loader animation
+const preloader = document.querySelector('.preloader');
+
+const fadeEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+window.addEventListener('load', fadeEffect);
+        </script>
+
+
+        <script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" activeness", "");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " activeness";
+}
+        </script>
+
+        
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+        </script>
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+        </script>
+    </body>
+</html>

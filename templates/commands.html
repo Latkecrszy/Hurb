@@ -138,27 +138,26 @@ $('.fade').css('visibility', 'hidden');
 
     <div id="moderation-tab-content" class="content">
         <section>
+
             <p class="tab-header">Moderation</p>
-            <button class="accordion">%mute</button>
-            <div class="panel">
-              <p>sample. Mutes a user.</p>
-            </div>
-
-            <button class="accordion">%unmute</button>
-            <div class="panel">
-              <p>sample. Unmutes a user.</p>
-            </div>
-
-            <button class="accordion">%kick</button>
-            <div class="panel">
-              <p>sample. Kicks the hell out of an user.</p>
-            </div>
+            {% for command, details in commands["moderation"].items() %}
+                <button class="accordion">{{ command }}</button>
+                <div class="panel">
+                  <p>{{ details[1] }}</p>
+                </div>
+            {% endfor %}
         </section>
     </div>
 
     <div id="economy-tab-content" class="tabcontent">
         <section>
-            <p>Economy</p>
+            <p class="tab-header">Economy</p>
+            {% for command, details in commands["economy"].items() %}
+                <button class="accordion">{{ command }}</button>
+                <div class="panel">
+                  <p>{{ details[1] }}</p>
+                </div>
+            {% endfor %}
         </section>
     </div>
 
@@ -182,7 +181,8 @@ $('.fade').css('visibility', 'hidden');
 
     <div id="fun-tab-content" class="tabcontent">
         <section>
-            <p>Fun</p>
+            <p class="tab-header">Fun</p>
+            <p>test</p>
         </section>
     </div>
 

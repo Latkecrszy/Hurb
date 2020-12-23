@@ -183,7 +183,12 @@ $('.fade').css('visibility', 'hidden');
     <section>
     <div id="fun-tab-content" class="content">
             <p class="tab-header">Fun</p>
-            <p>test</p>
+            {% for command, details in commands["fun"].items() %}
+                <button class="accordion">{{ command }}</button>
+                <div class="panel">
+                  <p>{{ details[1] }}</p>
+                </div>
+            {% endfor %}
     </div>
     </section>
     </div>

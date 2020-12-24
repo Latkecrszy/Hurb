@@ -142,7 +142,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="moderation-tab-content">
         <p class="tab-header">Moderation</p>
             {% for command, details in commands["moderation"].items() %}
-                <button class="accordion"><strong>{{ command }}</strong><span class="command-details">{{ details[1] }}</span></button>
+                <button class="accordion"><b>{{ command }}</b><span class="command-details">{{ details[1] }}</span></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>
@@ -165,7 +165,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="economy-tab-content">
             <p class="tab-header">Economy</p>
             {% for command, details in commands["economy"].items() %}
-                <button class="accordion"><strong>{{ command }}</strong><span class="command-details">{{ details[1] }}</span></button>
+                <button class="accordion"><b>{{ command }}</b><span class="command-details">{{ details[1] }}</span></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>
@@ -200,7 +200,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="ranking-tab-content" class="content">
            <p class="tab-header">Ranking</p>
             {% for command, details in commands["ranking"].items() %}
-                <button class="accordion"><strong>{{ command }}</strong><span class="command-details">{{ details[1] }}</span></button>
+                <button class="accordion"><b>{{ command }}</b><span class="command-details">{{ details[1] }}</span></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>
@@ -223,7 +223,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="fun-tab-content" class="content">
             <p class="tab-header">Fun</p>
             {% for command, details in commands["fun"].items() %}
-                <button class="accordion"><strong>{{ command }}</strong><span class="command-details">{{ details[1] }}</span></button>
+                <button class="accordion"><b>{{ command }}</b><span class="command-details">{{ details[1] }}</span></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>

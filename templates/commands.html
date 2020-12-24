@@ -140,25 +140,21 @@ $('.fade').css('visibility', 'hidden');
 
     <section>
     <div id="moderation-tab-content">
-            <p class="tab-header">Moderation</p>
+        <p class="tab-header">Moderation</p>
             {% for command, details in commands["moderation"].items() %}
-                <button class="accordion">{{ command }}<div class="command-details">{{ details[1] }}</div></button>
+                <button class="accordion"><strong>{{ command }}</strong><div class="command-details">{{ details[1] }}</div></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>
-                            <p class="command-parameters-p">{{ details[0] }}</p>
+                            <p class="command-parameters-p">{{ details[0].capitalize() }}</p>
                         </div>
                         <div class="command-permissions">
                             <h1 class="command-permissions-h">Permissions:</h1>
-                            <p class="command-permissions-p">{{ details[0] }}</p>
+                            <p class="command-permissions-p">{{ details[3].capitalize() }}</p>
                         </div>
                         <div class="command-examples">
                             <h1 class="command-examples-h">Examples:</h1>
                             <p class="command-examples-p">{{ details[2] }}</p>
-                        </div><br>
-                        <div class="command-description">
-                            <h1 class="command-description-h">Description:</h1>
-                            <p class="command-description-p">{{ details[1] }}</p>
                         </div>
                     </div>
             {% endfor %}
@@ -169,9 +165,20 @@ $('.fade').css('visibility', 'hidden');
     <div id="economy-tab-content">
             <p class="tab-header">Economy</p>
             {% for command, details in commands["economy"].items() %}
-                <button class="accordion">{{ command }}</button>
+                <button class="accordion"><strong>{{ command }}</strong><div class="command-details">{{ details[1] }}</div></button>
                     <div class="panel">
-                      <p>{{ details[1] }}</p>
+                        <div class="command-parameters">
+                            <h1 class="command-parameters-h">Parameters:</h1>
+                            <p class="command-parameters-p">{{ details[0].capitalize() }}</p>
+                        </div>
+                        <div class="command-permissions">
+                            <h1 class="command-permissions-h">Permissions:</h1>
+                            <p class="command-permissions-p">{{ details[3].capitalize() }}</p>
+                        </div>
+                        <div class="command-examples">
+                            <h1 class="command-examples-h">Examples:</h1>
+                            <p class="command-examples-p">{{ details[2] }}</p>
+                        </div>
                     </div>
             {% endfor %}
     </div>
@@ -191,7 +198,24 @@ $('.fade').css('visibility', 'hidden');
 
     <section>
     <div id="ranking-tab-content" class="content">
-            <p>Ranking</p>
+           <p class="tab-header">Ranking</p>
+            {% for command, details in commands["ranking"].items() %}
+                <button class="accordion"><strong>{{ command }}</strong><div class="command-details">{{ details[1] }}</div></button>
+                    <div class="panel">
+                        <div class="command-parameters">
+                            <h1 class="command-parameters-h">Parameters:</h1>
+                            <p class="command-parameters-p">{{ details[0].capitalize() }}</p>
+                        </div>
+                        <div class="command-permissions">
+                            <h1 class="command-permissions-h">Permissions:</h1>
+                            <p class="command-permissions-p">{{ details[3].capitalize() }}</p>
+                        </div>
+                        <div class="command-examples">
+                            <h1 class="command-examples-h">Examples:</h1>
+                            <p class="command-examples-p">{{ details[2] }}</p>
+                        </div>
+                    </div>
+            {% endfor %}
     </div>
     </section>
 
@@ -199,9 +223,20 @@ $('.fade').css('visibility', 'hidden');
     <div id="fun-tab-content" class="content">
             <p class="tab-header">Fun</p>
             {% for command, details in commands["fun"].items() %}
-                <button class="accordion">{{ command }}</button>
+                <button class="accordion"><strong>{{ command }}</strong><div class="command-details">{{ details[1] }}</div></button>
                     <div class="panel">
-                      <p>{{ details[1] }}</p>
+                        <div class="command-parameters">
+                            <h1 class="command-parameters-h">Parameters:</h1>
+                            <p class="command-parameters-p">{{ details[0].capitalize() }}</p>
+                        </div>
+                        <div class="command-permissions">
+                            <h1 class="command-permissions-h">Permissions:</h1>
+                            <p class="command-permissions-p">{{ details[3].capitalize() }}</p>
+                        </div>
+                        <div class="command-examples">
+                            <h1 class="command-examples-h">Examples:</h1>
+                            <p class="command-examples-p">{{ details[2] }}</p>
+                        </div>
                     </div>
             {% endfor %}
     </div>

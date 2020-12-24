@@ -8,7 +8,7 @@ import json
 app = Flask(__name__)
 
 
-@app.route('/landingpage')
+@app.route('/')
 def landingpage():
     return render_template("index.html"), 200
 

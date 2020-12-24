@@ -72,7 +72,7 @@ function showPage() {
             </div>-->
             <div class="top_info">
               <span class="close_info" onclick="this.parentElement.style.display='none';" title="Click to close. (Did you read it tho?)">&times;</span>
-              Serving <strong>52 servers</strong> and <strong>50776 members</strong>. <a href="https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&scope=bot" >Join us now!</a>
+              Serving <strong>55 servers</strong> and <strong>54308 members</strong>. <a href="https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&scope=bot" >Join us now!</a>
             </div>
             <header class="header">
                 <img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%">
@@ -123,14 +123,14 @@ function showPage() {
                     <!--<svg class="logo fade" viewBox="0 0 259 91" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M328.051 44.325L330.317 48.573L328.051 44.325Z" stroke="#FFFFFF" stroke-width="100"/>
                     </svg>-->
-                    <div class="background-ani">
+                    <!--<div class="background-ani">
                         <svg class="bg1" width="100%" height="100%" viewBox="0 0 1717 1134" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M-178 1119.5C-178 1119.5 55.3418 919.02 238.5 870C562.029 783.412 787.626 1257.31 1070.5 1078C1237.09 972.406 1170.74 751.055 1341 651.5C1463.78 579.71 1663.17 719.769 1698.5 582C1734.19 442.811 1443.04 492.96 1410.5 353C1371.73 186.234 1660 -7.5 1660 -7.5" stroke="#0F084B" stroke-width="30" class="svg-elem-5"></path>
                         </svg>
                         <svg class="bg2" width="100%" height="100%" viewBox="0 0 344 485" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M344 28.6537C312.933 13.8963 278.142 5.73162 241.445 5.95682C111.141 6.75646 6.15727 113.037 6.95691 243.341C7.75655 373.645 114.037 478.629 244.341 477.829C320.949 477.359 287.409 386.34 330.162 329.505C333.667 324.845 338.391 320.791 344 317.18" stroke="#FF0066" stroke-width="10"/>
                         </svg>
-                    </div>
+                    </div>-->
                     <div class="top_main_content">
                     <svg class="logo fade" viewBox="0 0 259 91" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="259" height="91">
                         <path class="path svg-elem-1" d="M61 3.8V74H43.9V45.1H17.3V74H0.199951V3.8H17.3V31.3H43.9V3.8H61Z" fill="#ffffff" stroke="#FFFFFF" stroke-width="2"></path>
@@ -168,35 +168,229 @@ function showPage() {
                 </div>
             </div>
             <div class="features_overview">
-                <div class="features_circles" id="features">
-                <div class="fc_box">
-                    <img class="moderation_fc" src="{{ url_for('static', filename='images/Moderation.svg') }}" height="80px" width="80px">
-                    <p class="fo_text_1">Moderation</p>
-                </div>
-                <div class="fc_box">
-                    <img class="economy_fc" src="{{ url_for('static', filename='images/Economy.svg') }}" height="80px" width="80px">
-                    <p class="fo_text_2">Economy</p>
-                </div>
-                <div class="fc_box">
-                    <img class="auto_fc" src="{{ url_for('static', filename='images/Auto.svg') }}" height="80px" width="80px">
-                    <p class="fo_text_3">Auto Features</p>
-                </div>
-                <div class="fc_box">
-                    <img class="nec_fc" src="{{ url_for('static', filename='images/NEC.svg') }}" height="80px" width="80px">
-                    <p class="fo_text_4">Nitro Emoji Conversion</p>
-                </div>
-                <div class="fc_box">
-                    <img class="ranking_fc" src="{{ url_for('static', filename='images/Ranking.svg') }}" height="80px" width="80px">
-                    <p class="fo_text_5">Ranking</p>
-                </div>
-                <div class="fc_box">
-                    <img class="fun_fc" src="{{ url_for('static', filename='images/Fun.svg') }}" height="80px" width="80px">
-                    <p class="fo_text_6">Fun</p>
-                </div>
-                </div>
+                <h1 class="fo-h">Features</h1>
+                <div class="tabs">
+                  <input type="radio" id="tab1" name="tab-control">
+                  <input type="radio" id="tab2" name="tab-control">
+                  <input type="radio" id="tab3" name="tab-control">
+                  <input type="radio" id="tab4" name="tab-control">
+                  <input type="radio" id="tab5" name="tab-control">
+                  <input type="radio" id="tab6" name="tab-control">
+                  <input type="radio" id="tab7" name="tab-control">
+                <ul>
+                    <li title="Moderation">
+                      <label for="tab1" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-moderation">Moderation</a>
+                      </span>
+                      </label>
+                    </li>
+                    <li title="Economy">
+                      <label for="tab2" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <g clip-path="url(#clip0)">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1C13.5 0.171573 12.8284 -0.5 12 -0.5C11.1716 -0.5 10.5 0.171573 10.5 1V3.5H9.5C8.17392 3.5 6.90215 4.02678 5.96447 4.96447C5.02678 5.90215 4.5 7.17392 4.5 8.5C4.5 9.82608 5.02678 11.0979 5.96447 12.0355C6.90215 12.9732 8.17392 13.5 9.5 13.5H10.5V17.5H6C5.17157 17.5 4.5 18.1716 4.5 19C4.5 19.8284 5.17157 20.5 6 20.5H10.5V23C10.5 23.8284 11.1716 24.5 12 24.5C12.8284 24.5 13.5 23.8284 13.5 23V20.5H14.5C15.8261 20.5 17.0979 19.9732 18.0355 19.0355C18.9732 18.0979 19.5 16.8261 19.5 15.5C19.5 14.1739 18.9732 12.9021 18.0355 11.9645C17.0979 11.0268 15.8261 10.5 14.5 10.5H13.5V6.5H17C17.8284 6.5 18.5 5.82843 18.5 5C18.5 4.17157 17.8284 3.5 17 3.5H13.5V1ZM10.5 6.5H9.5C8.96957 6.5 8.46086 6.71071 8.08579 7.08579C7.71071 7.46086 7.5 7.96957 7.5 8.5C7.5 9.03043 7.71071 9.53914 8.08579 9.91421C8.46086 10.2893 8.96957 10.5 9.5 10.5H10.5V6.5ZM13.5 13.5V17.5H14.5C15.0304 17.5 15.5391 17.2893 15.9142 16.9142C16.2893 16.5391 16.5 16.0304 16.5 15.5C16.5 14.9696 16.2893 14.4609 15.9142 14.0858C15.5391 13.7107 15.0304 13.5 14.5 13.5H13.5Z"/>
+                          </g>
+                          <defs>
+                              <clipPath id="clip0">
+                                  <rect width="24" height="24" fill="white"/>
+                              </clipPath>
+                          </defs>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-moderation">Economy</a>
+                      </span>
+                      </label>
+                    </li>
+                    <li title="Auto">
+                      <label for="tab3" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <g clip-path="url(#clip0)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3227 1.76125C12.5928 1.36983 10.7919 1.42302 9.08802 1.91586C7.392 2.40643 5.84719 3.31672 4.59636 4.56237L2.5 6.53222V4C2.5 3.17157 1.82843 2.5 1 2.5C0.171573 2.5 -0.5 3.17157 -0.5 4V9.99661V10C-0.5 10.1919 -0.463966 10.3754 -0.398295 10.544C-0.330586 10.7182 -0.228968 10.8826 -0.0931295 11.0272C0.0551291 11.185 0.229479 11.3035 0.416933 11.3825C0.582235 11.4523 0.76266 11.4933 0.951928 11.4992C0.970588 11.4998 0.989259 11.5001 1.00793 11.5C1.37366 11.4981 1.73961 11.3633 2.02716 11.0931L4.78684 8.5L6.66716 6.73314C6.67859 6.72241 6.68984 6.7115 6.70093 6.70041C7.59655 5.80434 8.70457 5.14975 9.9216 4.79772C11.1386 4.44569 12.425 4.4077 13.6607 4.68729C14.8964 4.96688 16.0411 5.55494 16.988 6.39659C17.935 7.23825 18.6533 8.30606 19.0759 9.50041C19.3523 10.2814 20.2094 10.6904 20.9904 10.4141C21.7714 10.1377 22.1804 9.28059 21.9041 8.49962C21.3124 6.82754 20.3068 5.33259 18.981 4.15428C17.6553 2.97596 16.0527 2.15268 14.3227 1.76125ZM24.0635 12.9422C23.7918 12.6691 23.4156 12.5 23 12.5H17C16.1716 12.5 15.5 13.1716 15.5 14C15.5 14.8284 16.1716 15.5 17 15.5H19.2132L17.3328 17.2669C17.3214 17.2776 17.3102 17.2885 17.2991 17.2996C16.4035 18.1957 15.2954 18.8503 14.0784 19.2023C12.8614 19.5543 11.575 19.5923 10.3393 19.3127C9.10363 19.0332 7.95891 18.4451 7.01196 17.6034C6.06502 16.7618 5.34671 15.694 4.92407 14.4996C4.64771 13.7186 3.79058 13.3096 3.00961 13.5859C2.22863 13.8623 1.81957 14.7194 2.09593 15.5004C2.68762 17.1725 3.69325 18.6674 5.01897 19.8458C6.34469 21.0241 7.9473 21.8474 9.67726 22.2388C11.4072 22.6302 13.2081 22.577 14.912 22.0842C16.608 21.5936 18.1528 20.6833 19.4036 19.4377L21.5 17.4678V20C21.5 20.8284 22.1716 21.5 23 21.5C23.8284 21.5 24.5 20.8284 24.5 20V14.0036V14C24.5 13.8016 24.4615 13.6123 24.3916 13.439C24.3348 13.2982 24.2558 13.1641 24.1543 13.042C24.1255 13.0074 24.0952 12.9741 24.0635 12.9422Z"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                          </defs>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-auto">Auto</a>
+                      </span>
+                      </label>
+                    </li>
+                    <li title="NEC">
+                      <label for="tab4" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-nec">NEC</a>
+                      </span>
+                    </label>
+                    </li>
+                    <li title="Ranking">
+                      <label for="tab5" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5742 3.61382C12.3973 3.54048 12.2034 3.5 12 3.5C11.7966 3.5 11.6027 3.54048 11.4258 3.61382C11.2489 3.68702 11.0832 3.79553 10.9393 3.93934L3.93934 10.9393C3.35355 11.5251 3.35355 12.4749 3.93934 13.0607C4.52513 13.6464 5.47487 13.6464 6.06066 13.0607L10.5 8.62132V19C10.5 19.8284 11.1716 20.5 12 20.5C12.8284 20.5 13.5 19.8284 13.5 19V8.62132L17.9393 13.0607C18.5251 13.6464 19.4749 13.6464 20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L13.0607 3.93934C12.9168 3.79553 12.7511 3.68702 12.5742 3.61382Z"/>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-ranking">Ranking</a>
+                      </span>
+                    </label>
+                    </li>
+                    <li title="Fun">
+                      <label for="tab6" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 12C3.5 7.30558 7.30558 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C7.30558 20.5 3.5 16.6944 3.5 12ZM12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5ZM7.1 12.8C7.75967 12.3053 8.69423 12.436 9.19305 13.0908L9.19306 13.0908L9.19353 13.0914C9.19665 13.0954 9.20496 13.1057 9.2183 13.1216C9.24508 13.1535 9.29148 13.2069 9.35642 13.2746C9.48752 13.4114 9.68673 13.5992 9.94476 13.7869C10.4666 14.1664 11.1633 14.5 12 14.5C12.8367 14.5 13.5334 14.1664 14.0552 13.7869C14.3133 13.5992 14.5125 13.4114 14.6436 13.2746C14.7085 13.2069 14.7549 13.1535 14.7817 13.1216C14.795 13.1057 14.8033 13.0954 14.8065 13.0914L14.8069 13.0909L14.8069 13.0908L14.807 13.0908C15.3058 12.436 16.2403 12.3053 16.9 12.8C17.5627 13.2971 17.6971 14.2373 17.2 14.9L16 14C17.2 14.9 17.1996 14.9005 17.1993 14.901L17.1985 14.902L17.1969 14.9041L17.1932 14.909L17.184 14.921C17.1771 14.93 17.1686 14.9408 17.1586 14.9535C17.1385 14.9789 17.1122 15.0115 17.0796 15.0502C17.0146 15.1277 16.9243 15.2306 16.8095 15.3504C16.5813 15.5886 16.2492 15.9008 15.8198 16.2131C14.9666 16.8336 13.6633 17.5 12 17.5C10.3367 17.5 9.0334 16.8336 8.18024 16.2131C7.75077 15.9008 7.41873 15.5886 7.19046 15.3504C7.0757 15.2306 6.98539 15.1277 6.92037 15.0502C6.88782 15.0115 6.86145 14.9789 6.84139 14.9535C6.83135 14.9408 6.82288 14.93 6.81598 14.921L6.80681 14.909L6.80311 14.9041L6.80148 14.902L6.80072 14.901C6.80036 14.9005 6.8 14.9 8 14L6.8 14.9C6.30294 14.2373 6.43726 13.2971 7.1 12.8ZM7.5 9C7.5 8.17157 8.17157 7.5 9 7.5H9.01C9.83843 7.5 10.51 8.17157 10.51 9C10.51 9.82843 9.83843 10.5 9.01 10.5H9C8.17157 10.5 7.5 9.82843 7.5 9ZM15 7.5C14.1716 7.5 13.5 8.17157 13.5 9C13.5 9.82843 14.1716 10.5 15 10.5H15.01C15.8384 10.5 16.51 9.82843 16.51 9C16.51 8.17157 15.8384 7.5 15.01 7.5H15Z"/>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-fun">Fun</a>
+                      </span>
+                    </label>
+                    </li>
+                    <li title="Voice">
+                      <label for="tab7" role="button">
+                      <svg viewBox="0 0 24 24">
+                          <path d="M21.9999 16.92V19.92C22.0011 20.1985 21.944 20.4742 21.8324 20.7294C21.7209 20.9845 21.5572 21.2136 21.352 21.4019C21.1468 21.5901 20.9045 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.9451 19.8199 21.92C16.7428 21.5856 13.7869 20.5342 11.1899 18.85C8.77376 17.3147 6.72527 15.2662 5.18993 12.85C3.49991 10.2412 2.44818 7.271 2.11993 4.18001C2.09494 3.90347 2.12781 3.62477 2.21643 3.36163C2.30506 3.09849 2.4475 2.85669 2.6347 2.65163C2.82189 2.44656 3.04974 2.28271 3.30372 2.17053C3.55771 2.05834 3.83227 2.00027 4.10993 2.00001H7.10993C7.59524 1.99523 8.06572 2.16708 8.43369 2.48354C8.80166 2.79999 9.04201 3.23945 9.10993 3.72001C9.23656 4.68007 9.47138 5.62273 9.80993 6.53001C9.94448 6.88793 9.9736 7.27692 9.89384 7.65089C9.81408 8.02485 9.6288 8.36812 9.35993 8.64001L8.08993 9.91001C9.51349 12.4136 11.5864 14.4865 14.0899 15.91L15.3599 14.64C15.6318 14.3711 15.9751 14.1859 16.3491 14.1061C16.723 14.0263 17.112 14.0555 17.4699 14.19C18.3772 14.5286 19.3199 14.7634 20.2799 14.89C20.7657 14.9585 21.2093 15.2032 21.5265 15.5775C21.8436 15.9518 22.0121 16.4296 21.9999 16.92Z"/>
+                      </svg><br>
+                      <span>
+                          <a class="fo-links" href="#feature-voice">Voice</a>
+                      </span>
+                    </label>
+                    </li>
+                </ul>
+            </div>
             </div>
 
-            <div class="features">
+            <div class="feature-tabs" id="features">
+                <section class="feature-tab-moderation" id="feature-moderation">
+                    <div class="ft-graphic-l">
+                        <img src="../static/images/Moderation_s.svg">
+                    </div>
+                    <div class="section-r">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/>
+                        </svg><br>
+                        <span>High Level Moderation</span>
+                        <p>Hurb is equipped with advanced moderation commands such as muting, tempmuting, modmuting (allows even admins to be muted), and channelmuting.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </section>
+                <section class="feature-tab-economy" id="feature-economy">
+                    <div class="ft-graphic-r">
+                        <img src="../static/images/Economy_s.svg">
+                    </div>
+                    <div class="section-l">
+                        <svg viewBox="0 0 24 24">
+                            <g clip-path="url(#clip0)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1C13.5 0.171573 12.8284 -0.5 12 -0.5C11.1716 -0.5 10.5 0.171573 10.5 1V3.5H9.5C8.17392 3.5 6.90215 4.02678 5.96447 4.96447C5.02678 5.90215 4.5 7.17392 4.5 8.5C4.5 9.82608 5.02678 11.0979 5.96447 12.0355C6.90215 12.9732 8.17392 13.5 9.5 13.5H10.5V17.5H6C5.17157 17.5 4.5 18.1716 4.5 19C4.5 19.8284 5.17157 20.5 6 20.5H10.5V23C10.5 23.8284 11.1716 24.5 12 24.5C12.8284 24.5 13.5 23.8284 13.5 23V20.5H14.5C15.8261 20.5 17.0979 19.9732 18.0355 19.0355C18.9732 18.0979 19.5 16.8261 19.5 15.5C19.5 14.1739 18.9732 12.9021 18.0355 11.9645C17.0979 11.0268 15.8261 10.5 14.5 10.5H13.5V6.5H17C17.8284 6.5 18.5 5.82843 18.5 5C18.5 4.17157 17.8284 3.5 17 3.5H13.5V1ZM10.5 6.5H9.5C8.96957 6.5 8.46086 6.71071 8.08579 7.08579C7.71071 7.46086 7.5 7.96957 7.5 8.5C7.5 9.03043 7.71071 9.53914 8.08579 9.91421C8.46086 10.2893 8.96957 10.5 9.5 10.5H10.5V6.5ZM13.5 13.5V17.5H14.5C15.0304 17.5 15.5391 17.2893 15.9142 16.9142C16.2893 16.5391 16.5 16.0304 16.5 15.5C16.5 14.9696 16.2893 14.4609 15.9142 14.0858C15.5391 13.7107 15.0304 13.5 14.5 13.5H13.5Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg><br><br><br>
+                        <span>Bustling Economy</span>
+                        <p>With gambling, donating, and even buying roles, Hurb has one of the best economy systems of any bot out there.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </section>
+                <section class="feature-tab-auto" id="feature-auto">
+                    <div class="ft-graphic-l">
+                        <img src="../static/images/Auto_s.svg">
+                    </div>
+                    <div class="section-r">
+                        <svg viewBox="0 0 24 24">
+                            <g clip-path="url(#clip0)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3227 1.76125C12.5928 1.36983 10.7919 1.42302 9.08802 1.91586C7.392 2.40643 5.84719 3.31672 4.59636 4.56237L2.5 6.53222V4C2.5 3.17157 1.82843 2.5 1 2.5C0.171573 2.5 -0.5 3.17157 -0.5 4V9.99661V10C-0.5 10.1919 -0.463966 10.3754 -0.398295 10.544C-0.330586 10.7182 -0.228968 10.8826 -0.0931295 11.0272C0.0551291 11.185 0.229479 11.3035 0.416933 11.3825C0.582235 11.4523 0.76266 11.4933 0.951928 11.4992C0.970588 11.4998 0.989259 11.5001 1.00793 11.5C1.37366 11.4981 1.73961 11.3633 2.02716 11.0931L4.78684 8.5L6.66716 6.73314C6.67859 6.72241 6.68984 6.7115 6.70093 6.70041C7.59655 5.80434 8.70457 5.14975 9.9216 4.79772C11.1386 4.44569 12.425 4.4077 13.6607 4.68729C14.8964 4.96688 16.0411 5.55494 16.988 6.39659C17.935 7.23825 18.6533 8.30606 19.0759 9.50041C19.3523 10.2814 20.2094 10.6904 20.9904 10.4141C21.7714 10.1377 22.1804 9.28059 21.9041 8.49962C21.3124 6.82754 20.3068 5.33259 18.981 4.15428C17.6553 2.97596 16.0527 2.15268 14.3227 1.76125ZM24.0635 12.9422C23.7918 12.6691 23.4156 12.5 23 12.5H17C16.1716 12.5 15.5 13.1716 15.5 14C15.5 14.8284 16.1716 15.5 17 15.5H19.2132L17.3328 17.2669C17.3214 17.2776 17.3102 17.2885 17.2991 17.2996C16.4035 18.1957 15.2954 18.8503 14.0784 19.2023C12.8614 19.5543 11.575 19.5923 10.3393 19.3127C9.10363 19.0332 7.95891 18.4451 7.01196 17.6034C6.06502 16.7618 5.34671 15.694 4.92407 14.4996C4.64771 13.7186 3.79058 13.3096 3.00961 13.5859C2.22863 13.8623 1.81957 14.7194 2.09593 15.5004C2.68762 17.1725 3.69325 18.6674 5.01897 19.8458C6.34469 21.0241 7.9473 21.8474 9.67726 22.2388C11.4072 22.6302 13.2081 22.577 14.912 22.0842C16.608 21.5936 18.1528 20.6833 19.4036 19.4377L21.5 17.4678V20C21.5 20.8284 22.1716 21.5 23 21.5C23.8284 21.5 24.5 20.8284 24.5 20V14.0036V14C24.5 13.8016 24.4615 13.6123 24.3916 13.439C24.3348 13.2982 24.2558 13.1641 24.1543 13.042C24.1255 13.0074 24.0952 12.9741 24.0635 12.9422Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg><br>
+                        <span>Auto Features</span>
+                        <p>Hurb can scan every message for potential things you don't want, such as invites, links, or even bad words, not to mention the ability to search and react to certain words within messsages.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </section>
+                <section class="feature-tab-nec" id="feature-nec">
+                    <div class="ft-graphic-r">
+                        <img src="../static/images/Moderation_s.svg">
+                    </div>
+                    <div class="section-l">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/>
+                        </svg><br><br><br>
+                        <span>Animated Emojis</span>
+                        <p>If you send a failed emoji from any server that Hurb is in, whether it be an animated emoji from your current server or a regular one from a server you aren't even in, Hurb can send the message for you from a bot that looks exactly like yourself, essentially granting you nitro. All for free!</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </section>
+                <section class="feature-tab-ranking" id="feature-ranking">
+                    <div class="ft-graphic-l">
+                        <img src="../static/images/Ranking_s.svg">
+                    </div>
+                    <div class="section-r">
+                        <svg viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5742 3.61382C12.3973 3.54048 12.2034 3.5 12 3.5C11.7966 3.5 11.6027 3.54048 11.4258 3.61382C11.2489 3.68702 11.0832 3.79553 10.9393 3.93934L3.93934 10.9393C3.35355 11.5251 3.35355 12.4749 3.93934 13.0607C4.52513 13.6464 5.47487 13.6464 6.06066 13.0607L10.5 8.62132V19C10.5 19.8284 11.1716 20.5 12 20.5C12.8284 20.5 13.5 19.8284 13.5 19V8.62132L17.9393 13.0607C18.5251 13.6464 19.4749 13.6464 20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L13.0607 3.93934C12.9168 3.79553 12.7511 3.68702 12.5742 3.61382Z"/>
+                        </svg><br>
+                        <span>Advanced Ranking System</span>
+                        <p>Want a ranking system with built in antispam? Like to be able to customize your person rank card? Even wanted to set your progress bar to a bunch of walking ducks? Well, Hurb can do that all and more with its leveling system!</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </section>
+                <section class="feature-tab-fun" id="feature-fun">
+                    <div class="ft-graphic-r">
+                        <img src="../static/images/Fun_s.svg">
+                    </div>
+                    <div class="section-l">
+                        <svg viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 12C3.5 7.30558 7.30558 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C7.30558 20.5 3.5 16.6944 3.5 12ZM12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5ZM7.1 12.8C7.75967 12.3053 8.69423 12.436 9.19305 13.0908L9.19306 13.0908L9.19353 13.0914C9.19665 13.0954 9.20496 13.1057 9.2183 13.1216C9.24508 13.1535 9.29148 13.2069 9.35642 13.2746C9.48752 13.4114 9.68673 13.5992 9.94476 13.7869C10.4666 14.1664 11.1633 14.5 12 14.5C12.8367 14.5 13.5334 14.1664 14.0552 13.7869C14.3133 13.5992 14.5125 13.4114 14.6436 13.2746C14.7085 13.2069 14.7549 13.1535 14.7817 13.1216C14.795 13.1057 14.8033 13.0954 14.8065 13.0914L14.8069 13.0909L14.8069 13.0908L14.807 13.0908C15.3058 12.436 16.2403 12.3053 16.9 12.8C17.5627 13.2971 17.6971 14.2373 17.2 14.9L16 14C17.2 14.9 17.1996 14.9005 17.1993 14.901L17.1985 14.902L17.1969 14.9041L17.1932 14.909L17.184 14.921C17.1771 14.93 17.1686 14.9408 17.1586 14.9535C17.1385 14.9789 17.1122 15.0115 17.0796 15.0502C17.0146 15.1277 16.9243 15.2306 16.8095 15.3504C16.5813 15.5886 16.2492 15.9008 15.8198 16.2131C14.9666 16.8336 13.6633 17.5 12 17.5C10.3367 17.5 9.0334 16.8336 8.18024 16.2131C7.75077 15.9008 7.41873 15.5886 7.19046 15.3504C7.0757 15.2306 6.98539 15.1277 6.92037 15.0502C6.88782 15.0115 6.86145 14.9789 6.84139 14.9535C6.83135 14.9408 6.82288 14.93 6.81598 14.921L6.80681 14.909L6.80311 14.9041L6.80148 14.902L6.80072 14.901C6.80036 14.9005 6.8 14.9 8 14L6.8 14.9C6.30294 14.2373 6.43726 13.2971 7.1 12.8ZM7.5 9C7.5 8.17157 8.17157 7.5 9 7.5H9.01C9.83843 7.5 10.51 8.17157 10.51 9C10.51 9.82843 9.83843 10.5 9.01 10.5H9C8.17157 10.5 7.5 9.82843 7.5 9ZM15 7.5C14.1716 7.5 13.5 8.17157 13.5 9C13.5 9.82843 14.1716 10.5 15 10.5H15.01C15.8384 10.5 16.51 9.82843 16.51 9C16.51 8.17157 15.8384 7.5 15.01 7.5H15Z"/>
+                        </svg><br><br><br>
+                        <span>Great random stuff</span>
+                        <p>Hurb also has lots of random, quirky but fun commands such as searching for gifs, playing hangman, and killing other users.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </section>
+                <section class="feature-tab-voice" id="feature-voice">
+                    <div class="ft-graphic-l">
+                        <img src="../static/images/Moderation_s.svg">
+                    </div>
+                    <div class="section-r">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21.9999 16.92V19.92C22.0011 20.1985 21.944 20.4742 21.8324 20.7294C21.7209 20.9845 21.5572 21.2136 21.352 21.4019C21.1468 21.5901 20.9045 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.9451 19.8199 21.92C16.7428 21.5856 13.7869 20.5342 11.1899 18.85C8.77376 17.3147 6.72527 15.2662 5.18993 12.85C3.49991 10.2412 2.44818 7.271 2.11993 4.18001C2.09494 3.90347 2.12781 3.62477 2.21643 3.36163C2.30506 3.09849 2.4475 2.85669 2.6347 2.65163C2.82189 2.44656 3.04974 2.28271 3.30372 2.17053C3.55771 2.05834 3.83227 2.00027 4.10993 2.00001H7.10993C7.59524 1.99523 8.06572 2.16708 8.43369 2.48354C8.80166 2.79999 9.04201 3.23945 9.10993 3.72001C9.23656 4.68007 9.47138 5.62273 9.80993 6.53001C9.94448 6.88793 9.9736 7.27692 9.89384 7.65089C9.81408 8.02485 9.6288 8.36812 9.35993 8.64001L8.08993 9.91001C9.51349 12.4136 11.5864 14.4865 14.0899 15.91L15.3599 14.64C15.6318 14.3711 15.9751 14.1859 16.3491 14.1061C16.723 14.0263 17.112 14.0555 17.4699 14.19C18.3772 14.5286 19.3199 14.7634 20.2799 14.89C20.7657 14.9585 21.2093 15.2032 21.5265 15.5775C21.8436 15.9518 22.0121 16.4296 21.9999 16.92Z"/>
+                        </svg><br>
+                        <span>Amazing voice commands</span>
+                        <p>Hurb also has some crystal-clear voice commands that makes talking in the VC a smooth go!</p>
+                        <a type="disabled" href="">(coming soon)</a>
+                    </div>
+                </section>
+                <section class="more-coming-soon">
+                    <div class="section-c">
+                        <svg viewBox="0 0 24 24">
+                            <g clip-path="url(#clip0)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.35205 12.7542C4.35205 8.05982 8.15763 4.25424 12.8521 4.25424C17.5465 4.25424 21.3521 8.05982 21.3521 12.7542C21.3521 17.4487 17.5465 21.2542 12.8521 21.2542C8.15763 21.2542 4.35205 17.4487 4.35205 12.7542ZM12.8521 1.25424C6.50078 1.25424 1.35205 6.40297 1.35205 12.7542C1.35205 19.1055 6.50078 24.2542 12.8521 24.2542C19.2033 24.2542 24.3521 19.1055 24.3521 12.7542C24.3521 6.40297 19.2033 1.25424 12.8521 1.25424ZM14.3521 6.75424C14.3521 5.92581 13.6805 5.25424 12.8521 5.25424C12.0236 5.25424 11.3521 5.92581 11.3521 6.75424V12.7542C11.3521 13.3224 11.6731 13.8418 12.1812 14.0959L16.1812 16.0959C16.9222 16.4664 17.8232 16.166 18.1937 15.4251C18.5642 14.6841 18.2638 13.7831 17.5229 13.4126L14.3521 11.8272V6.75424Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.852051 0.754242)"/>
+                                </clipPath>
+                            </defs>
+                        </svg><br>
+                        <span>More Coming Soon</span>
+                        <p>Hurb is a work-is-progress bot that really cares about the community. With time, we'll continue to add new features. If you have an idea in mind, please let us know.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!--<div class="features">
                 <section class="feature_1">
                     <img class="graphic_1" src="{{ url_for('static', filename='images/Moderation_s.svg') }}" class="img-1 lazy">
                     <div class="feature_text_1">
@@ -245,12 +439,12 @@ function showPage() {
                 <h1 class="h_cs fade">More coming soon</h1>
                 <p class="text_cs fade">Hurb is a work-in-progress bot that really cares about the community and wishes for the best of all its users.<br>If you have anything in mind that can help us develop Hurb and make it better, feel free to suggest it!</p>
                 <div class="cs_icons fade"></div>
-            </div>
+            </div>-->
             <div class="commands" id="commands">
                 <h1 class="h_cmds fade">Commands</h1>
                 <!--<h4 class="dtls_cmds">(hover for more details)</h4>-->
                 <div class="floats">
-                    <svg class="blob-ani fade" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="blob-ani" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#FF0066" d="M51.9,-15.4C58.1,2.4,47.8,27,29.9,39.6C12.1,52.2,-13.4,52.8,-33.7,39.7C-54,26.5,-69.2,-0.5,-62.8,-18.5C-56.3,-36.6,-28.1,-45.8,-2.7,-44.9C22.8,-44.1,45.6,-33.2,51.9,-15.4Z" transform="translate(100 100)" />
 
                     <p class="text-1">%mute</p>
@@ -283,7 +477,7 @@ function showPage() {
                 </div>
                 <p class="text_cmds fade">
                     You can view a complete list of commands
-                    <a href="/cmds">
+                    <a href="/commands">
                         here
                     </a>
                 </p>
@@ -294,11 +488,11 @@ function showPage() {
                     <h1 class="h_join fade">Join the party!</h1>
                     <p class="text_join fade">(<s>pizza</s> cool commands included)</p>
                     <div class="users">
-                        <h4 class="h_users fade">50776</h4>
+                        <h4 class="h_users fade">54308</h4>
                         <h6 class="s_users fade">users</h6>
                     </div>
                     <div class="servers">
-                        <h4 class="h_servers fade">52</h4>
+                        <h4 class="h_servers fade">55</h4>
                         <h6 class="s_servers fade">servers</h6>
                     </div>
                 </div>
@@ -322,7 +516,7 @@ function showPage() {
                 <div class="resources">
                     <p class="footer_h"><b>Resources</b></p>
                     <p class="footer_p"><a class="footer_link" href="">Documentation</a></p>
-                    <p class="footer_p"><a class="footer_link" href="">All commands</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/commands">All commands</a></p>
                     <p class="footer_p"><a class="footer_link" href="">How-to's</a></p>
                     <p class="footer_p"><a class="footer_link "href="https://discord.gg/JjJa2QAFp6">Support Server</a></p>
                     <p class="footer_p"><a class="footer_link" href="https://top.gg/bot/736283988628602960">Top.gg Page</a></p>
@@ -367,7 +561,7 @@ const wave1 = "M70.8,-25.3C78.5,0.7,62.3,32.1,38,49.1C13.6,66.1,-19,68.6,-39.5,5
 anime({
   targets: '.blob-ani > path',
   easing: 'linear',
-  duration: 7500,
+  duration: 9000,
   loop: true,
   d: [
     { value: [wave1, wave2] },
@@ -530,6 +724,22 @@ anime.timeline({loop: false})
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.2.4/scrollMonitor.js"></script>
+
+<script>
+var scrollMonitor = require("scrollmonitor"); // if you're old school you can use the scrollMonitor global.
+var myElement = document.getElementById("itemToWatch");
+
+var elementWatcher = scrollMonitor.create( myElement );
+
+elementWatcher.enterViewport(function() {
+    console.log( 'I have entered the viewport' );
+});
+elementWatcher.exitViewport(function() {
+    console.log( 'I have left the viewport' );
+});
+</script>
 
 
     </body>

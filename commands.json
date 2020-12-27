@@ -67,5 +67,15 @@
 				"%leaderboard": ["None", "Take a look at the leaderboard for the server.", "`%leaderboard`", "None"],
 				"%levelupchannel": ["channel name/none", "Set a message to send level up messages in, or set it to none to have them send in the user's active channel.", "`%levelupchannel #level-up`", "administrator"],
 				"%levelrole": ["add/remove, level, role", "Sets a role to assign once a member reaches a certain level.", "%levelrole add 5 cool person", "administrator"],
-				"%rankcolor": ["emoji", "Set an emoji to display your rank as, or even set it to a word if you want!", "`%rankcolor ✨`", "None"]}
+				"%rankcolor": ["emoji", "Set an emoji to display your rank as, or even set it to a word if you want!", "`%rankcolor ✨`", "None"]},
+	"auto": {"%enable invitecheck": "Turns on an invite blocker for the server.",
+                                "%disable invitecheck": "Turns off an invite blocker for the server.",
+                                "%enable nonocheck": "Turns on a swear word blocker for the server.",
+                                "%disable nonocheck": "Turns off a swear word blocker for the server.",
+                                "%enable nitro": "Turns on an emoji converter for the server; see more info with the `%help nitro` command.",
+                                "%disable nitro": "Turns off an emoji converter for the server; see more info with the `%help nitro` command.",
+                                "%enable linkcheck": "Turns on a link blocker for the server.",
+                                "%disable linkcheck": "Turns off a link blocker for the server.",
+                                "%enable ranking": "Turns on a ranking system for the server.",
+                                "%disable ranking": "Turns off a ranking system for the server."}
 }

@@ -100,7 +100,7 @@ body{
     margin: 0px;
 }
 
-.header{
+.header {
     width: 100%;
     margin: 0%;
     height: 4%;
@@ -2272,6 +2272,8 @@ html{
 
 .fof-link-suggestions{
     display: inline-flex;
+    text-decoration: none;
+    color: #F2F2F2;
 }
 
 .fof-links{
@@ -2282,7 +2284,8 @@ html{
     line-height: 48px;
     padding-left: 1.5vw;
     padding-right: 1.5vw;
-
+    text-decoration: none;
+    underline: none;
     color: #F2F2F2;
 }
 

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPXHW53973"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WPXHW53973');
+      </script>
     <!---Favicons start-->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='Favicons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='Favicons/apple-icon-60x60.png') }}">
@@ -167,7 +176,7 @@ function showPage() {
                     <p class="p_about">Hurb is the great little discord bot that does it all! Starting from moderation, taking off down the road to ranking, making a pit stop at Nitro-Emoji Conversion and fun stuff, and finally reaching  economy and not stopping even there! Hurb is capable of doing it all. But why take our word for it? Add Hurb to find out on your own.</p>
                 </div>
             </div>
-            <div class="features_overview">
+            <div class="features_overview"  id="features">
                 <h1 class="fo-h">Features</h1>
                 <div class="tabs">
                   <input type="radio" id="tab1" name="tab-control">
@@ -266,7 +275,7 @@ function showPage() {
             </div>
             </div>
 
-            <div class="feature-tabs" id="features">
+            <div class="feature-tabs">
                 <section class="feature-tab-moderation" id="feature-moderation">
                     <div class="ft-graphic-l">
                         <img src="../static/images/Moderation_s.svg">

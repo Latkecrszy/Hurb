@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPXHW53973"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WPXHW53973');
+      </script>
     <!---Favicons start-->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='Favicons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='Favicons/apple-icon-60x60.png') }}">
@@ -54,11 +63,15 @@ $('.fade').css('visibility', 'hidden');
 
         <header class="header">
             <img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%">
-            <div class="h_links fade">
-                <span><a href="/landingpage">Home</a></span>
-                <span><a href="/status">Status</a></span>
-                <span><a href="/help">Help</a></span>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="h_links" id="header">
+                <a href="/">Home</a>
+                <a href="/status">Status</a>
+                <a href="/help">Help</a>
                 <div class="h_login">Login</div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleIcon()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </div>
         </header>
 
@@ -182,6 +195,10 @@ $('.fade').css('visibility', 'hidden');
                         <div class="command-examples">
                             <h1 class="command-examples-h">Examples:</h1>
                             <p class="command-examples-p">{{ details[2] }}</p>
+                        </div><br>
+                        <div class="command-description">
+                            <h1 class="command-description-h">Description:</h1>
+                            <p class="command-description-p">{{ details[1] }}</p>
                         </div>
                     </div>
             {% endfor %}
@@ -217,6 +234,10 @@ $('.fade').css('visibility', 'hidden');
                         <div class="command-examples">
                             <h1 class="command-examples-h">Examples:</h1>
                             <p class="command-examples-p">{{ details[2] }}</p>
+                        </div><br>
+                        <div class="command-description">
+                            <h1 class="command-description-h">Description:</h1>
+                            <p class="command-description-p">{{ details[1] }}</p>
                         </div>
                     </div>
             {% endfor %}
@@ -240,6 +261,10 @@ $('.fade').css('visibility', 'hidden');
                         <div class="command-examples">
                             <h1 class="command-examples-h">Examples:</h1>
                             <p class="command-examples-p">{{ details[2] }}</p>
+                        </div><br>
+                        <div class="command-description">
+                            <h1 class="command-description-h">Description:</h1>
+                            <p class="command-description-p">{{ details[1] }}</p>
                         </div>
                     </div>
             {% endfor %}
@@ -322,6 +347,16 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
+}
+        </script>
+        <script>
+function toggleIcon() {
+  var x = document.getElementById("header");
+  if (x.className === "h_links") {
+    x.className += " responsive";
+  } else {
+    x.className = "h_links";
+  }
 }
         </script>
     </body>

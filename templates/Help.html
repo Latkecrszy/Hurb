@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPXHW53973"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WPXHW53973');
+      </script>
+    <!---Favicons start-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='Favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='Favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='Favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='Favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='Favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='Favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='Favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='Favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='Favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='Favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='Favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='Favicons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='Favicons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='Favicons/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='Favicons/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+    <!---Favicons end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+    <link href="../static/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script type="text/javascript">
+$(window).scroll(function() {
+    $('.graphic_1').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+        $(this).addClass("ltr-anime");
+        }
+    });
+});
+
+$('.fade').css('visibility', 'hidden');
+    </script>
+
+    <title>Contact Us</title>
+    </head>
+
+    <body>
+        <div class="preloader" id="preloader">
+            <img src="{{ url_for('static', filename='spinner.svg') }}" alt="spinner">
+        </div>
+
+        <header class="header">
+            <a href="/"><img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%"></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="h_links" id="header">
+                <a href="/">Home</a>
+                <a href="/status">Status</a>
+                <a href="/help">Help</a>
+                <div class="h_login">Login</div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleIcon()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <div class="contact-cards">
+            <h1>Contact Us</h1>
+            <p class="contact-cards-p">Encountered a bug? New Feature requests? Wanna tell us how much you love Hurb? Go on ahead. Choose whichever option suits you best.</p>
+
+            <a href="https://forms.google.com/hold-up!-work-in-progress">
+            <div class="cards">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.417 6.25C35.9642 5.70282 36.6138 5.26878 37.3287 4.97265C38.0436 4.67652 38.8098 4.52411 39.5837 4.52411C40.3575 4.52411 41.1237 4.67652 41.8386 4.97265C42.5536 5.26878 43.2031 5.70282 43.7503 6.25C44.2975 6.79717 44.7315 7.44676 45.0277 8.16168C45.3238 8.8766 45.4762 9.64284 45.4762 10.4167C45.4762 11.1905 45.3238 11.9567 45.0277 12.6716C44.7315 13.3866 44.2975 14.0362 43.7503 14.5833L15.6253 42.7083L4.16699 45.8333L7.29199 34.375L35.417 6.25Z"/>
+                </svg>
+                <br>
+
+                <h1>Fill a form</h1>
+                <p>Google Forms</p>
+            </div>
+            </a>
+
+            <a href="mailto:hurbsupport@gmail.com?subject=feedback" target="_blank">
+            <div class="cards">
+                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.87213 11.7331C8.01441 11.6701 8.17076 11.635 8.33392 11.635H41.6673C41.8304 11.635 41.9868 11.6701 42.129 11.7331L25.0006 23.723L7.87213 11.7331ZM1.16747 12.7457C1.16692 12.7766 1.16685 12.8075 1.16725 12.8384V37.8016C1.16725 41.7502 4.3854 44.9683 8.33392 44.9683H41.6673C45.6158 44.9683 48.8339 41.7502 48.8339 37.8016V12.8381C48.8343 12.8074 48.8343 12.7767 48.8337 12.746C48.8036 8.82293 45.5972 5.63497 41.6673 5.63497H8.33392C4.40407 5.63497 1.1977 8.82275 1.16747 12.7457ZM42.8339 18.5636V37.8016C42.8339 38.4364 42.3021 38.9683 41.6673 38.9683H8.33392C7.6991 38.9683 7.16725 38.4364 7.16725 37.8016V18.5636L23.2802 29.8427C24.3132 30.5657 25.688 30.5657 26.721 29.8427L42.8339 18.5636Z"/>
+                </svg>
+                <br>
+
+                <h1>Mail Us</h1>
+                <p>hurbsupport@gmail.com</p>
+            </div>
+            </a>
+
+            <a href="https://discord.gg/JjJa2QAFp6" target="_blank">
+            <div class="cards">
+                <svg width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6857 4.58334H43.3143C45.8972 4.58334 48 6.69167 48 9.30417V50.4167L43.0857 46.0625L40.32 43.4958L37.3943 40.7688L38.6057 45.0083H12.6857C10.1029 45.0083 8 42.9 8 40.2875V9.30417C8 6.69167 10.1029 4.58334 12.6857 4.58334ZM32.9829 32.6563C33.6686 33.5271 34.4914 34.5125 34.4914 34.5125C39.5429 34.3521 41.4857 31.0292 41.4857 31.0292C41.4857 23.65 38.1943 17.6688 38.1943 17.6688C34.9029 15.1938 31.7714 15.2625 31.7714 15.2625L31.4514 15.6292C35.3372 16.8208 37.1429 18.5396 37.1429 18.5396C34.7657 17.2333 32.4343 16.5917 30.2629 16.3396C28.6171 16.1563 27.04 16.2021 25.6457 16.3854C25.526 16.3854 25.4237 16.4029 25.3084 16.4226C25.2916 16.4254 25.2746 16.4283 25.2571 16.4313C24.4571 16.5 22.5143 16.7979 20.0686 17.875C19.2229 18.2646 18.72 18.5396 18.72 18.5396C18.72 18.5396 20.6171 16.7292 24.7314 15.5375L24.5029 15.2625C24.5029 15.2625 21.3714 15.1938 18.08 17.6688C18.08 17.6688 14.7886 23.65 14.7886 31.0292C14.7886 31.0292 16.7086 34.3521 21.76 34.5125C21.76 34.5125 22.6057 33.4813 23.2914 32.6104C20.3886 31.7396 19.2914 29.9063 19.2914 29.9063C19.2914 29.9063 19.52 30.0667 19.9314 30.2958C19.9543 30.3188 19.9771 30.3417 20.0229 30.3646C20.0571 30.3875 20.0914 30.4047 20.1257 30.4219C20.16 30.4391 20.1943 30.4563 20.2286 30.4792C20.8 30.8 21.3714 31.0521 21.8971 31.2583C22.8343 31.625 23.9543 31.9917 25.2571 32.2438C26.9714 32.5646 28.9829 32.6792 31.1771 32.2667C32.2514 32.0833 33.3486 31.7625 34.4914 31.2813C35.2914 30.9833 36.1829 30.5479 37.12 29.9292C37.12 29.9292 35.9771 31.8083 32.9829 32.6563ZM21.5312 26.3542C21.5312 24.9563 22.5598 23.8104 23.8627 23.8104C25.1655 23.8104 26.217 24.9563 26.1941 26.3542C26.1941 27.7521 25.1655 28.8979 23.8627 28.8979C22.5827 28.8979 21.5312 27.7521 21.5312 26.3542ZM29.8741 26.3542C29.8741 24.9563 30.9027 23.8104 32.2055 23.8104C33.5084 23.8104 34.537 24.9563 34.537 26.3542C34.537 27.7521 33.5084 28.8979 32.2055 28.8979C30.9255 28.8979 29.8741 27.7521 29.8741 26.3542Z"/>
+                </svg>
+
+                <br>
+
+                <h1>Hurb Support</h1>
+                <p>Discord Server</p>
+            </div>
+            </a>
+        </div>
+
+        <script>
+//short pre-loader animation
+const preloader = document.querySelector('.preloader');
+
+const fadeEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+window.addEventListener('load', fadeEffect);
+        </script>
+    </body>
+</html>

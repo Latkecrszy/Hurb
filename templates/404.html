@@ -58,12 +58,16 @@ $('.fade').css('visibility', 'hidden');
 
     <body>
         <header class="header">
-            <a href="http://hurb.gg"><img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%"></a>
-            <div class="h_links fade">
-                <span><a href="http://hurb.gg">Home</a></span>
-                <span><a href="http://hurb.gg/status">Status</a></span>
-                <span><a href="http://hurb.gg/docs">Docs</a></span>
+            <a href="/"><img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%"></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="h_links fade" id="header">
+                <a href="/">Home</a>
+                <a href="/status">Status</a>
+                <a href="/docs">Docs</a>
                 <div class="h_login">Login</div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleIcon()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </div>
         </header>
         <div class="bg_grad">
@@ -81,18 +85,18 @@ $('.fade').css('visibility', 'hidden');
                 <div class="fof-footer">
                     <div class="fof-command-suggestions">
                         <p class="fof-command-suggestions-p">
-                            Here are some hot commands instead: %mute, %help, and %doggo
+                            Something went wrong- most likely at our end. Fear not tho-
                         </p>
                     </div>
                     <div class="fof-link-suggestions-text">
                         <p class="fof-link-suggestions-text-p">
-                            and some links to help you get back home,
+                            here are some links to help you get back home,
                         </p>
                     </div>
                     <div class="fof-link-suggestions">
-                        <p class="fof-links"><a style="text-decoration:none; color: #F2F2F2;" href="http://hurb.gg">Home</a></p>
-                        <p class="fof-links"><a style="text-decoration:none; color: #F2F2F2;" href="http://hurb.gg/#features">Features</a></p>
-                        <p class="fof-links"><a style="text-decoration:none; color: #F2F2F2;" href="http://hurb.gg/commands">Commands</a></p>
+                        <p class="fof-links"><a href="/">Home</a></p>
+                        <p class="fof-links"><a href="/#features">Features</a></p>
+                        <p class="fof-links"><a href="/commands">Commands</a></p>
                         <p class="fof-links">Contact</p>
                         <p class="fof-links">Support</p>
                     </div>
@@ -105,6 +109,16 @@ $('.fade').css('visibility', 'hidden');
             server: '766428259188604969', // Hurb Support
             channel: '788407517143105626' // #live-support-channel
         })
+        </script>
+        <script>
+        function toggleIcon() {
+            var x = document.getElementById("header");
+            if (x.className === "h_links") {
+                x.className += " responsive";
+            } else {
+                x.className = "h_links";
+            }
+        }
         </script>
     </body>
 </html>

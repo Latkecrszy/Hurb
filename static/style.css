@@ -2195,6 +2195,7 @@ html{
 
 .fof-container{
     height: 100vh;
+    min-height: 600px;
     width: auto;
     overflow: hidden;
     text-align: center;
@@ -2289,6 +2290,11 @@ html{
     color: #F2F2F2;
 }
 
+.fof-links a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 600px) {
   .fof-link-suggestions{
     display: inline;
@@ -2305,6 +2311,9 @@ html{
   }
   .fof-subtext-p{
       margin-top: 0px;
+  }
+  .h_login{
+      display: none;
   }
 }
 
@@ -2882,4 +2891,111 @@ html{
         width: 17%;
         padding: 0px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Help page CSS begins here*/
+
+.contact-cards h1{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-cards-p{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: normal;
+    color: #bdbdbd;
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.contact-cards a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards{
+    position: relative;
+    background-color: #15191C;
+    box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
+    border-radius: 30px;
+    height: 250px;
+    width: 250px;
+    transition: 0.5s;
+    margin: 50px;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid #15191C;
+}
+
+.cards:hover{
+    background-color: #0f084b;
+    border: 3px solid #FFFFFF;
+}
+
+.cards svg{
+    height: 2.2em;
+    width: 2.2em;
+    fill: #bdbdbd;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: fill 0.5s;
+}
+
+.cards:hover svg{
+    fill: #FF0066;
+    stroke: none;
+}
+
+.cards h1{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cards p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    color: #BDBDBD;
+    text-align: center;
 }

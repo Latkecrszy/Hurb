@@ -84,14 +84,18 @@ function showPage() {
               Serving <strong>55 servers</strong> and <strong>54308 members</strong>. <a href="https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&scope=bot" >Join us now!</a>
             </div>
             <header class="header">
-                <a href="http://hurb.gg"><img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%"></a>
-                <div class="h_links fade">
-                    <span><a href="#about">About</a></span>
-                    <span><a href="#features">Features</a></span>
-                    <span><a href="http://hurb.gg/commands">Commands</a></span>
-                    <span><a href="http://hurb.gg/status">Status</a></span>
-                    <span><a href="http://hurb.gg/docs">Docs</a></span>
+                <a href="/"><img src="https://cdn.discordapp.com/avatars/736283988628602960/b558212e5a66f7b25192116c212c381c.webp?size=1024" width="50px" height="50px" style="border-radius:10px; margin-left:20px; margin-top:1.5%"></a>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div class="h_links fade" id="header">
+                    <a href="/#about">About</a>
+                    <a href="/#features">Features</a>
+                    <a href="/commands">Commands</a>
+                    <a href="/status">Status</a>
+                    <a href="/help">Help</a>
                     <div class="h_login">Login</div>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleIcon()">
+                      <i class="fa fa-bars"></i>
+                    </a>
                 </div>
             </header>
             <div class="top_main">
@@ -748,6 +752,17 @@ elementWatcher.enterViewport(function() {
 elementWatcher.exitViewport(function() {
     console.log( 'I have left the viewport' );
 });
+</script>
+
+<script>
+function toggleIcon() {
+    var x = document.getElementById("header");
+    if (x.className === "h_links") {
+        x.className += " responsive";
+    } else {
+        x.className = "h_links";
+    }
+}
 </script>
 
 

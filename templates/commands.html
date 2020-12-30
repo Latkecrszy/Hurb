@@ -227,7 +227,11 @@ $('.fade').css('visibility', 'hidden');
     <div id="economy-tab-content">
             <p class="tab-header">Economy</p>
             {% for command, details in commands["economy"].items() %}
+<<<<<<< HEAD
+                <button class="accordion"><b>{{ command }}</b><div class="command-details">{{ details[-1] }}</div></button>
+=======
                 <button class="accordion" id="{{ command }}"><b>{{ command }}</b><div class="command-details">{{ details[1] }}</div></button>
+>>>>>>> dd16c5fe5f6185afab36440051c7cfaa7fdad075
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>
@@ -252,13 +256,34 @@ $('.fade').css('visibility', 'hidden');
 
     <section>
     <div id="auto-tab-content">
-            <p>Auto</p>
+            <p class="tab-header">Auto</p>
+            {% for command, details in commands["auto"].items() %}
+                <button class="accordion"><b>{{ command }}</b><div class="command-details">{{ details[-1] }}</div></button>
+                    <div class="panel">
+                        <div class="command-parameters">
+                            <h1 class="command-parameters-h">Parameters:</h1>
+                            <p class="command-parameters-p">{{ details[0].capitalize() }}</p>
+                        </div>
+                        <div class="command-permissions">
+                            <h1 class="command-permissions-h">Permissions:</h1>
+                            <p class="command-permissions-p">{{ details[3].capitalize() }}</p>
+                        </div>
+                        <div class="command-examples">
+                            <h1 class="command-examples-h">Examples:</h1>
+                            <p class="command-examples-p">{{ details[2] }}</p>
+                        </div><br>
+                        <div class="command-description">
+                            <h1 class="command-description-h">Description:</h1>
+                            <p class="command-description-p">{{ details[1] }}</p>
+                        </div>
+                    </div>
+            {% endfor %}
     </div>
     </section>
 
     <section>
-    <div id="nec-tab-content">
-            <p>NEC</p>
+    <div id="config-tab-content">
+            <p>config</p>
     </div>
     </section>
 
@@ -266,7 +291,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="ranking-tab-content" class="content">
            <p class="tab-header">Ranking</p>
             {% for command, details in commands["ranking"].items() %}
-                <button class="accordion"><b>{{ command }}</b><div class="command-details">{{ details[1] }}</div></button>
+                <button class="accordion" id="{{ command}}"><b>{{ command }}</b><div class="command-details">{{ details[4] }}</div></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>
@@ -293,7 +318,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="fun-tab-content" class="content">
             <p class="tab-header">Fun</p>
             {% for command, details in commands["fun"].items() %}
-                <button class="accordion"><b>{{ command }}</b><div class="command-details">{{ details[1] }}</div></button>
+                <button class="accordion" id="{{command}}"><b>{{ command }}</b><div class="command-details">{{ details[4] }}</div></button>
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>

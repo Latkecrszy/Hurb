@@ -227,11 +227,7 @@ $('.fade').css('visibility', 'hidden');
     <div id="economy-tab-content">
             <p class="tab-header">Economy</p>
             {% for command, details in commands["economy"].items() %}
-<<<<<<< HEAD
                 <button class="accordion"><b>{{ command }}</b><div class="command-details">{{ details[-1] }}</div></button>
-=======
-                <button class="accordion" id="{{ command }}"><b>{{ command }}</b><div class="command-details">{{ details[1] }}</div></button>
->>>>>>> dd16c5fe5f6185afab36440051c7cfaa7fdad075
                     <div class="panel">
                         <div class="command-parameters">
                             <h1 class="command-parameters-h">Parameters:</h1>

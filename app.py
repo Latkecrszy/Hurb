@@ -49,10 +49,6 @@ def help():
     return render_template("Help.html"), 200
 
 
-@app.route('/.well-known/pki-validation/4307D692848848637B6A0CBD1BF8D2C0.txt')
-def verify():
-    return send_file('4307D692848848637B6A0CBD1BF8D2C0.txt')
-
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5001))

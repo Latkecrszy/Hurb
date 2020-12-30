@@ -155,6 +155,8 @@ body{
 .h_links{
     float: right;
     padding: 20px;
+    right: 80px;
+    position: relative;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: 600;
@@ -176,25 +178,126 @@ body{
     display: none;
 }
 
-.h_login{
-    font-size: 18px;
-    float: left;
-    right: 0px;
-    width: 130px;
+.dropbtn{
+    /*font-size: 18px; */
+    float: right;
+    /* right: 0px; */
+    width: 50px;
     height: 50px;
-    left: 1267px;
-    top: 27px;
-
+    right: 20px;
+    top: 50%;
     line-height: 38px;
-    border: 7px solid #1E2126;
+    margin: 0px 15px;
+    border: 2px solid #1E2126;
     box-sizing: border-box;
-    box-shadow: 4px 8px 18px rgba(0.30980393290519714, 0.30980393290519714, 0.30980393290519714, 1);
+    box-shadow: 4px 8px 18px rgb(0 0 0);
     border-radius: 15px;
     text-align: center;
     vertical-align: center;
-
-    animation: loading-delay 7s ease forwards;
+    object-fit: cover;
+    transition: border-radius 0.5s;
+    /* animation: loading-delay 7s ease forwards;*/
 }
+
+.dropdown{
+    position: relative;
+    right: 20px;
+    top: -75px;
+    /* top: 50%; */
+    /* display: inline-block; */
+    float: right;
+}
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    height: 200px;
+    background-color: #15191c;
+    box-shadow: 4px 8px 18px rgb(0 0 0);
+    border-radius: 10px;
+    min-width: 300px;
+    z-index: 1000000;
+    transition: 0.5s;
+}
+
+.dropdown_content img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    /* display: table-column-group;*/
+}
+
+.nickname{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    display: inline-flex;
+    top: 14px;
+    left: 70px;
+    /* margin-bottom: 10px; */
+    position: absolute;
+}
+
+.status{
+    color: #BDBDBD;
+    font-size: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    width: 70%;
+}
+
+.dropdown_content hr{
+    position: absolute;
+    top: 81px;
+    width: 80%;
+    left: 25px;
+}
+
+.dropdown_content a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Poppins';
+    line-height: 4;
+    position: absolute;
+    top: 150px;
+    left: 15px;
+}
+
+.dropdown_content a:nth-of-type(1){
+    top: 80px;
+}
+
+.dropdown_content a:nth-of-type(2){
+    top: 120px;
+}
+
+.activedrop .dropdown_content{
+    display: block;
+    border-radius: 15px 0px 15px 15px;
+    border: 3px solid #fe0066;
+}
+
+.activedrop .dropbtn{
+    border-radius: 15px 15px 0px 15px;
+    border: 3px solid #fe0006;
+}
+
+/*
+.dropbtn:hover + .dropdown-content{
+    display: block;
+}*/
 
 
 
@@ -1136,7 +1239,7 @@ html, body {
     position: relative;
 }
 
-.commands::after, .features_overview::after{
+.commands::after, .features_overview::after, .contact-cards::after{
     content: "";
     width: 0px;
     height: 20px;
@@ -1148,15 +1251,20 @@ html, body {
     transition: 1.5s ease-in-out;
     background-image: linear-gradient(90deg, #820236 0%, #0F084B 100%);
 }
+.contact-cards::after{
+    top: 170px;
+}
 
-.commands:hover::after, .features_overview:hover::after{
+.commands:hover::after, .features_overview:hover::after, .contact-cards:hover::after{
     width: 200px;
     opacity: 1;
     display: block;
 }
-
 .features_overview:hover::after{
     width: 140px;
+}
+.contact-cards:hover::after{
+    width: 170px
 }
 
 .h_cmds{
@@ -2988,10 +3096,12 @@ html{
 
 .contact-cards h1{
     font-family: Poppins;
-    font-size: 32px;
-    font-weight: bolder;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
     color: #ffffff;
     text-align: center;
+    margin-top: 20px;
 }
 
 .contact-cards-p{
@@ -3007,6 +3117,10 @@ html{
 .contact-cards a{
     text-decoration: none;
     color: inherit;
+}
+
+.cc-center{
+    display: inline-block;
 }
 
 .cards{

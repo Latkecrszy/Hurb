@@ -124,7 +124,7 @@ function showPage() {
                         <stop offset="1" stop-color="#402281"/>
                         </linearGradient>
                         </defs>
-    </svg>
+                    </svg>
 
                 </a>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -134,12 +134,24 @@ function showPage() {
                     <a href="/commands">Commands</a>
                     <a href="/status">Status</a>
                     <a href="/help">Help</a>
-                    <div class="h_login">Login</div>
+
                     <a href="javascript:void(0);" class="icon" onclick="toggleIcon()">
                       <i class="fa fa-bars"></i>
                     </a>
                 </div>
+
             </header>
+            <div class="dropdown" id="dropcontent">
+                <img class="dropbtn" src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif" onclick="toggleDropdown()">
+                <div class="dropdown_content">
+                    <img src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif">
+                    <span class="nickname">Titan#0415</span>
+                    <span class="status">all it takes is a leap through time and a twist of fate.</span>
+                    <hr>
+                    <a href="#">Go to Dashboard</a>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
             <div class="top_main">
                 <div class="main_content" id="top">
                     <!--<div class="shapes_l">
@@ -211,7 +223,7 @@ function showPage() {
                         <img src="https://cdn.discordapp.com/attachments/765942853586124820/776337914539933726/Screen_Shot_2020-11-11_at_10.49.37_PM.png" style="vertical-align:middle;">
                     </button>-->
                     <button class="features_button fade">
-                        <a class="features_link" href="#features">All Features</a>
+                        <a class="features_link" href="#">Go to Dashboard</a>
                     </button>
                     <div class="login_prompt fade">Already added to your server? <a href="/">Login</a></div>
                 </div>
@@ -794,6 +806,7 @@ elementWatcher.exitViewport(function() {
 </script>
 
 <script>
+//Toggles Menu-section for small-screen Headers
 function toggleIcon() {
     var x = document.getElementById("header");
     if (x.className === "h_links") {
@@ -803,7 +816,12 @@ function toggleIcon() {
     }
 }
 </script>
-
-
-    </body>
+<script>
+//Toggles Drop-down menu on click
+function toggleDropdown() {
+  var x = document.getElementById("dropcontent");
+  x.classList.toggle("activedrop");
+}
+</script>
+</body>
 </html>

@@ -2769,6 +2769,12 @@ html{
     width: 30%;
 }
 
+.auto-description {
+    float: left;
+    left: 1%;
+    width: 90%;
+}
+
 .command-permissions{
     position: relative;
     float: left;

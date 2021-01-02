@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, send_file, redirect
 import os, sys, requests, jinja2, json
 
 
@@ -47,6 +47,11 @@ def commands():
 @app.route('/help')
 def help():
     return render_template("Help.html"), 200
+
+
+@app.route('/add')
+def add():
+    return redirect("https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&redirect_uri=https%3A%2F%2Fhurb.gg&scope=bot", code=302)
 
 
 

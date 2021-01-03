@@ -29,6 +29,12 @@
     <meta name="msapplication-TileImage" content="{{ url_for('static', filename='Favicons/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
     <!---Favicons end-->
+    <meta property="og:site_name" content="Hurb">
+    <meta property="og:url" content="http://hurb.gg/commands">
+    <meta property="og:title" content="Commands | Hurb">
+    <meta property="og:description" content="Hurb is the great little bot that does it all! Take a look at all of Hurb's amazing and wonderful and cool and hot and beautif- well, commands.">
+    <meta property="og:type" content="website">
+    <meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/716377034728931331/793358677117370439/Hurbpfpshayan.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
@@ -38,20 +44,6 @@
     <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script type="text/javascript">
-$(window).scroll(function() {
-    $('.graphic_1').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-        $(this).addClass("ltr-anime");
-        }
-    });
-});
-
-$('.fade').css('visibility', 'hidden');
-    </script>
 
     <title>Hurb | The Great Little Bot That Does It All</title>
     </head>
@@ -113,8 +105,8 @@ $('.fade').css('visibility', 'hidden');
             <img class="dropbtn" src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif" onclick="toggleDropdown()">
             <div class="dropdown_content">
                 <img src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif">
-                <span class="nickname">Titan#0415</span>
-                <span class="status">all it takes is a leap through time and a twist of fate.</span>
+                <span class="nickname">Name#0000</span>
+                <span class="status">sample (under active testing)</span>
                 <hr>
                 <a href="#">Go to Dashboard</a>
                 <a href="#">Log out</a>

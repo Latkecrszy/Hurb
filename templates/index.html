@@ -29,9 +29,9 @@
     <meta name="msapplication-TileImage" content="{{ url_for('static', filename='Favicons/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#FF0066">
     <!---Favicons end-->
-    <meta property="og:site_name" content="Hurb | Home">
+    <meta property="og:site_name" content="Hurb">
     <meta property="og:url" content="http://hurb.gg">
-    <meta property="og:title" content="Hurb">
+    <meta property="og:title" content="Hurb | Home">
     <meta property="og:description" content="Hurb is the great little bot that does it all! Moderation, Economy, Ranking, Fun & Auto commands and much much more. Come check it out!">
     <meta property="og:type" content="website">
     <meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/716377034728931331/793358677117370439/Hurbpfpshayan.jpg">
@@ -43,20 +43,6 @@
     <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script type="text/javascript">
-$(window).scroll(function() {
-    $('.graphic_1').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-        $(this).addClass("ltr-anime");
-        }
-    });
-});
-
-$('.fade').css('visibility', 'hidden');
-    </script>
 
     <title>Hurb | The Great Little Bot That Does It All</title>
     </head>
@@ -86,8 +72,9 @@ function showPage() {
                 46 servers | 49956 members
             </div>-->
             <div class="top_info">
-              <span class="close_info" onclick="this.parentElement.style.display='none';" title="Click to close. (Did you read it tho?)">&times;</span>
-              Serving <strong>54 servers</strong> and <strong>54448 members</strong>. <a href="https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&scope=bot" >Join us now!</a>
+              <span class="close_info" onclick="this.parentElement.style.display='none';" title="Dismiss">&times;</span>
+              <p><strong>Current Phase- Open Beta</strong> | Some features/links might be broken. Thank you for visiting hurb.gg.</p>
+              <p><strong>Current Phase- Open Beta</strong></p>
             </div>
             <header class="header">
                 <a href="/">
@@ -132,7 +119,7 @@ function showPage() {
                     <a href="/#about">About</a>
                     <a href="/#features">Features</a>
                     <a href="/commands">Commands</a>
-                    <a href="/status">Status</a>
+                    <a href="https://hurb.statuspage.io">Status</a>
                     <a href="/help">Help</a>
 
                     <a href="javascript:void(0);" class="icon" onclick="toggleIcon()">
@@ -145,8 +132,8 @@ function showPage() {
                 <img class="dropbtn" src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif" onclick="toggleDropdown()">
                 <div class="dropdown_content">
                     <img src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif">
-                    <span class="nickname">NameGoesHere#0000</span>
-                    <span class="status">sample (under-active-testing)</span>
+                    <span class="nickname">Name#0000</span>
+                    <span class="status">sample (under active testing)</span>
                     <hr>
                     <a href="#">Go to Dashboard</a>
                     <a href="#">Log out</a>
@@ -154,50 +141,7 @@ function showPage() {
             </div>
             <div class="top_main">
                 <div class="main_content" id="top">
-                    <!--<div class="shapes_l">
-                      <svg class="shapes_left" width="225" height="465" viewBox="0 0 225 465" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape_1" x="-72.9257" y="172.432" width="100" height="100" rx="20" transform="rotate(-35 -72.9257 172.432)" fill="#F30AFF"/>
-                        <circle class="shape_2" cx="66" cy="304" r="50" fill="#FA8128"/>
-                        <path class="shape_3" d="M59.4767 26.8609C64.0696 21.3873 71.2338 18.7797 78.2706 20.0205L104.768 24.6927C111.805 25.9334 117.645 30.834 120.089 37.5484L129.291 62.8318C131.735 69.5462 130.411 77.0543 125.818 82.5279L108.523 103.139C103.93 108.613 96.7662 111.22 89.7294 109.98L63.2322 105.307C56.1954 104.067 50.3552 99.166 47.9113 92.4516L38.7089 67.1682C36.2651 60.4538 37.589 52.9457 42.1819 47.4721L59.4767 26.8609Z" fill="#9F2042"/>
-                        <rect class="shape_4" x="84" y="184.279" width="100" height="100" rx="20" transform="rotate(-40 84 184.279)" fill="#0094C6"/>
-                        <path class="shape_5" d="M-14.3538 379.946C-11.3224 368.804 2.63379 365.122 10.7673 373.318L35.168 397.907C43.3016 406.104 39.5123 420.031 28.3474 422.977L-5.14745 431.814C-16.3124 434.76 -26.4793 424.514 -23.448 413.372L-14.3538 379.946Z" fill="#402281"/>
-                    </svg>
 
-                        <div class="shape_1"></div>
-                        <div class="shape_2"></div>
-                        <div class="shape_3"></div>
-                        <div class="shape_4"></div>
-                        <div class="shape_5"></div>
-                        <div class="shape_6"></div>
-                        <div class="shape_7"></div>
-                        <div class="shape_8"></div>
-                        <div class="shape_9"></div>
-                        <div class="shape_10"></div>
-                        <div class="shape_11"></div>
-                    </div>-->
-                    <!--<div class="shapes_r">
-                      <svg class="shapes_right" width="229" height="380" viewBox="0 0 229 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape_6" x="0.842773" y="67.6399" width="100" height="100" rx="20" transform="rotate(-19.3922 0.842773 67.6399)" fill="#FA8128"/>
-                        <circle class="shape_7" cx="101.188" cy="244.056" r="60" transform="rotate(15.6078 101.188 244.056)" fill="#9F2042"/>
-                        <path class="shape_8" d="M152.573 9.20847C158.469 5.17241 166.071 4.58854 172.514 7.67681L183.251 12.8227C189.694 15.9109 194.001 22.2022 194.548 29.3265L195.46 41.1975C196.007 48.3218 192.712 55.1969 186.816 59.233L176.991 65.9581C171.095 69.9942 163.493 70.5781 157.05 67.4898L146.313 62.3439C139.87 59.2557 135.563 52.9644 135.016 45.8401L134.104 33.9691C133.557 26.8448 136.852 19.9697 142.748 15.9336L152.573 9.20847Z" fill="#F30AFF"/>
-                        <rect class="shape_9" x="148.795" y="121.271" width="100" height="100" rx="20" transform="rotate(-24.3922 148.795 121.271)" fill="#0094C6"/>
-                        <path class="shape_10" d="M190.525 294.825C193.556 283.683 207.513 280.001 215.646 288.197L240.047 312.786C248.18 320.982 244.391 334.909 233.226 337.855L199.731 346.692C188.566 349.638 178.399 339.393 181.431 328.251L190.525 294.825Z" fill="#402281"/>
-                      </svg>
-                    </div>--->
-                    <!--<svg class="logo fade" viewBox="0 0 259 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="path" fill-rule="evenodd" clip-rule="evenodd" stroke="#ffffff" stroke-width="4" d="M77 3.8V18.2H105.844V56.5C105.844 58.8689 106.436 59.5733 106.587 59.7347C106.769 59.9301 107.118 60.3 108.544 60.3C110.074 60.3 110.443 59.9053 110.597 59.7404L110.602 59.7347C110.753 59.5733 111.344 58.8689 111.344 56.5V18.2H173.827V19.2363C176.841 18.1391 180.025 17.6 183.327 17.6H183.501V0H216.601V18.723C219.534 17.8227 222.619 17.4 225.801 17.4C231.83 17.4 237.477 18.9514 242.541 22.116C247.644 25.3057 251.533 29.808 254.257 35.3231C257.105 40.9523 258.401 47.2513 258.401 54C258.401 60.7606 257.1 67.0791 254.268 72.7539C251.552 78.2635 247.684 82.7783 242.627 86.0294L242.584 86.057L242.541 86.084C237.477 89.2486 231.83 90.8 225.801 90.8C222.618 90.8 219.53 90.4017 216.601 89.5316V90H183.501V51.7H178.627C175.583 51.7 174.536 52.3387 174.329 52.494C174.302 52.5496 174.263 52.6415 174.217 52.7798C174.034 53.3279 173.827 54.3693 173.827 56.1V90H111.344V89.3321C108.494 90.1898 105.513 90.6 102.444 90.6C96.9754 90.6 91.8056 89.3918 87.1754 86.7459L87.1224 86.7157L87.0699 86.6846C82.7738 84.142 79.4134 80.5939 77 76.2378V90H43.9V61.1H33.3V90H0.199951V3.8H33.3V31.3H43.9V3.8H77ZM51.9 39.3H25.3V11.8H8.19995V82H25.3V53.1H51.9V82H69V11.8H51.9V39.3ZM111.344 80.8224C111.648 80.6891 111.948 80.5483 112.244 80.4C115.244 78.8667 117.611 76.8667 119.344 74.4V82H136.444V26.2H119.344V56.5C119.344 58.4017 119.094 60.0872 118.592 61.5565C118.109 62.9716 117.393 64.1861 116.444 65.2C116.087 65.5819 115.706 65.9285 115.301 66.2398C113.514 67.6133 111.262 68.3 108.544 68.3C105.278 68.3 102.678 67.2667 100.744 65.2C98.8112 63.1333 97.8445 60.2333 97.8445 56.5V26.2H80.8445V58.8C80.8445 63.6667 81.7445 67.9 83.5445 71.5C85.3445 75.1 87.8778 77.8667 91.1445 79.8C94.4112 81.6667 98.1778 82.6 102.444 82.6C105.68 82.6 108.647 82.0075 111.344 80.8224ZM208.601 82V74.2C210.267 76.8 212.567 78.9 215.501 80.5C215.86 80.6878 216.227 80.864 216.601 81.0288C219.282 82.2096 222.349 82.8 225.801 82.8C230.401 82.8 234.567 81.6333 238.301 79.3C242.034 76.9 244.967 73.5333 247.101 69.2C249.301 64.8 250.401 59.7333 250.401 54C250.401 48.2667 249.301 43.2333 247.101 38.9C244.967 34.5667 242.034 31.2333 238.301 28.9C234.567 26.5667 230.401 25.4 225.801 25.4C222.399 25.4 219.332 26.0193 216.601 27.258C216.228 27.4271 215.861 27.6078 215.501 27.8C212.501 29.4 210.201 31.5 208.601 34.1V8H191.501V82H208.601ZM211.695 44.3356C210.838 45.3153 210.153 46.4283 209.641 47.6744C208.881 49.5231 208.501 51.665 208.501 54.1C208.501 58.3667 209.667 61.7333 212.001 64.2C214.401 66.6667 217.301 67.9 220.701 67.9C224.101 67.9 227.001 66.6667 229.401 64.2C231.801 61.6667 233.001 58.2667 233.001 54C233.001 49.7333 231.801 46.4 229.401 44C227.067 41.5333 224.167 40.3 220.701 40.3C217.301 40.3 214.401 41.5333 212.001 44C211.897 44.1101 211.795 44.2219 211.695 44.3356ZM217.778 49.5346C217.193 50.1704 216.501 51.3833 216.501 54.1C216.501 56.8167 217.193 58.0296 217.778 58.6654C218.676 59.5719 219.509 59.9 220.701 59.9C221.894 59.9 222.728 59.5711 223.627 58.662C224.309 57.9251 225.001 56.6569 225.001 54C225.001 51.28 224.281 50.1937 223.744 49.6569L223.665 49.5783L223.589 49.4976C222.802 48.6658 222.021 48.3 220.701 48.3C219.509 48.3 218.676 48.6281 217.778 49.5346ZM173.827 28.0101C173.66 28.104 173.493 28.2006 173.327 28.3C170.327 30.0333 167.827 32.4333 165.827 35.5V26.2H148.727V82H165.827V56.1C165.827 51.5 166.894 48.3 169.027 46.5C171.161 44.6333 174.361 43.7 178.627 43.7H183.327V25.6C180.456 25.6 177.79 26.1518 175.327 27.2554C174.819 27.4834 174.319 27.7349 173.827 28.0101Z"/>
-                    </svg>-->
-                    <!--<svg class="logo fade" viewBox="0 0 259 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M328.051 44.325L330.317 48.573L328.051 44.325Z" stroke="#FFFFFF" stroke-width="100"/>
-                    </svg>-->
-                    <!--<div class="background-ani">
-                        <svg class="bg1" width="100%" height="100%" viewBox="0 0 1717 1134" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M-178 1119.5C-178 1119.5 55.3418 919.02 238.5 870C562.029 783.412 787.626 1257.31 1070.5 1078C1237.09 972.406 1170.74 751.055 1341 651.5C1463.78 579.71 1663.17 719.769 1698.5 582C1734.19 442.811 1443.04 492.96 1410.5 353C1371.73 186.234 1660 -7.5 1660 -7.5" stroke="#0F084B" stroke-width="30" class="svg-elem-5"></path>
-                        </svg>
-                        <svg class="bg2" width="100%" height="100%" viewBox="0 0 344 485" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M344 28.6537C312.933 13.8963 278.142 5.73162 241.445 5.95682C111.141 6.75646 6.15727 113.037 6.95691 243.341C7.75655 373.645 114.037 478.629 244.341 477.829C320.949 477.359 287.409 386.34 330.162 329.505C333.667 324.845 338.391 320.791 344 317.18" stroke="#FF0066" stroke-width="10"/>
-                        </svg>
-                    </div>-->
                     <div class="top_main_content">
                     <svg class="logo fade" viewBox="0 0 259 91" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="259" height="91">
                         <path class="path svg-elem-1" d="M61 3.8V74H43.9V45.1H17.3V74H0.199951V3.8H17.3V31.3H43.9V3.8H61Z" fill="#ffffff" stroke="#FFFFFF" stroke-width="2"></path>
@@ -205,25 +149,14 @@ function showPage() {
                         <path class="path svg-elem-3" d="M157.827 27.5C159.827 24.4333 162.327 22.0333 165.327 20.3C168.327 18.5 171.661 17.6 175.327 17.6V35.7H170.627C166.361 35.7 163.161 36.6333 161.027 38.5C158.894 40.3 157.827 43.5 157.827 48.1V74H140.727V18.2H157.827V27.5Z" fill="#ffffff" stroke="#FFFFFF" stroke-width="2"></path>
                         <path class="path svg-elem-4" d="M200.601 26.1C202.201 23.5 204.501 21.4 207.501 19.8C210.501 18.2 213.934 17.4 217.801 17.4C222.401 17.4 226.567 18.5667 230.301 20.9C234.034 23.2333 236.967 26.5667 239.101 30.9C241.301 35.2333 242.401 40.2667 242.401 46C242.401 51.7333 241.301 56.8 239.101 61.2C236.967 65.5333 234.034 68.9 230.301 71.3C226.567 73.6333 222.401 74.8 217.801 74.8C213.867 74.8 210.434 74.0333 207.501 72.5C204.567 70.9 202.267 68.8 200.601 66.2V74H183.501V0H200.601V26.1ZM225.001 46C225.001 41.7333 223.801 38.4 221.401 36C219.067 33.5333 216.167 32.3 212.701 32.3C209.301 32.3 206.401 33.5333 204.001 36C201.667 38.4667 200.501 41.8333 200.501 46.1C200.501 50.3667 201.667 53.7333 204.001 56.2C206.401 58.6667 209.301 59.9 212.701 59.9C216.101 59.9 219.001 58.6667 221.401 56.2C223.801 53.6667 225.001 50.2667 225.001 46Z" fill="#ffffff" stroke="#FFFFFF" stroke-width="2"></path>
                     </svg>
-                    <!---<h1>Hurb</h1>--->
                     <h5 class="tglbtdia">The Great Little Bot That Does It All!</h5>
                     <button class="add_button fade">
-                        <!--<svg class="discord_logo" width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect id="Discord-Logo-White 1" width="50" height="48.9796" fill="url(#pattern0)"/>
-                            <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0" transform="scale(0.00408163)"/>
-                            </pattern>
-                            <image id="image0" data-name="Discord-Logo-White.png" width="245" height="240" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPUAAADwCAMAAADvotLkAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAQIAQv++fz2Aw3yBwUK+PD/W3OwAABYNJREFUeAHt3deWqzAPhuHPljtN93+zf8kasktWHLPHgBj0nk956NVA0zRN0zRN0zRN0zRN07Q+kTFWSKMxOKIpFJZVXDJ2jcbCEosJ+zUVllo02CeaWXIL9ihHlp2jHdCepRe7s4cVfSc2Rb5CM7q28DUa0THDF8kP6FfkqxTQrYmv04BeOb5OCzo18IUq6NTIVyqjTzNfKYs+Fb5SM/rElyqiS5mvFbpkVK1qVata1apWtapVrWpVq1rVqlY1VK1qVata1apWtapVrWpVR2et9VytWLu4+EPUJaQMAMhz0+32PIZycXUcBzyagucP+TABqzxeVl1Wcl48N+VDxlfDUq6odgaPKMUXnPstz38UE+Gr5K6mDsM6y35TOWetMXjJGLv80vsw4CvjrqR2+cscVomz04B6w2RXZDB1t0R1MX+a5zGjNbPEP6YbkPwl1JYAABTWDfPGhnH+fR0BLfLVMePR6OvkajRGZm9p/Q+KcPVCz5dEXCL8ezn456oCmkWrHR7ZdUP8nSiVdSICRbLaAMAQiyX0KLmS8SgJVjsAMDGhW8YlPCpy1QZATuhaMgCAJFYdsWNFqjphx6xQdcGekZeptti1IFNN2LUsUh2wc06i2mDnkkB1we55eeoRuxfkqQfsXhannnFARZo64YBGaWrCAQ3C1DMOKcpSJxzSKEtNOKRBlHrGQUVJ6oSDWiSpBxxUFqSOOCwvR21xWEGO2uCwkhi1x4eGZK01hGrGWpsGfIjEqGdUM8/b0u9NZH3jYHxRinpEJQr8zL8jGd88OtsiRZ3bxwhLDStrrLInKeqmbW6FnbfsCEmI2m2ZM57wUtm0Jywy1HbTvxgadkae8L4gQz1tWgl9y8wb8b5RhprwttAwkfLGlcaIUPuNO1fbcrSFSiLUDu9rOaaxW0/iogS13ah2LWqD980S1GkPdcb7rAS12Xg2vLQgUMlIUG8dBi81/P6CSlmAuqDS2LKh8ltHmhSgdhsPml3LTj2jVjlfHTaeF5qGi9wO1dz5aotaVBomkt04WvByvjptGm09UsOB64R69ny1wQa2I+AT239CI8lXg54kbxs+L+EGfMqcr8bnhtE57+ZEqJSC89HZDFxfvUt0SzVOV7tbq1VtB/RrMnipSFTnMqJTg5vxmpOoRuIyoUNkOdJl1EjMznzf7Fe0ePXKbnZXzCtakLp+m2LyzFwSfeOFxbeH7YM/W81z9XtePhhsjlKsnsRGPl3Ny4cTwrJkbGkdeKKY+g2Vc9Wc8KbseIUbNEUrmb0l2Xf3ODWcQPp5/CQ31vFaGPCmkYWoK2xMjn/lltEQXiMzhsjP/DJc4ckrDnjt7cgn0c32fyWT7P8KLvIfzal6hUKQmh3hfVQ6fTsvRxalrl7tCp2+wzN6eW+xzUOfbz5NlT2CJPWapR4jj/gMvDYEse/aezt0+BJnpIpZlnptnr7/JU6HP6Lk5I+N40MiPAvf/HjekObLjHlVgjW5enOm4bAnGzuXC45lVxz/Y67oGJWqVrWqVa1qVata1apWdbdUrWpVq1rVqla1qlWtalWrWtWqzrdUg0/OxzPUhU/OxBPUM5/cSPF4deKTc0A4XE18drSFjZ+yiE8AwtFqwycXAGA8WA3H51b2Hyte4oFK3sBGtyyf24hHkz9UjXj6vutR9oeq6WQ2tbPRsVz4zKb2/wP4MXM7tP8f6BotfF4FzWx0zhQ+rdzMRvdS5JMam995wQ5l6/iMYvObJNipwZwQWtn4wdlbqpFuqUa6pRrJ31GN7O+oRo53VIPiHdWgcEc1EG6pxnhLNdIt1cj+jmrkckc1KN5RDZrvqAbCLdUYb6lGuqUa2d9RjVzuqAbFO6pBM+OOLdA0TdM0TdM0TdM0TdO0b/ZfegfWFMciUSwAAAAASUVORK5CYII="/>
-                            </defs>
-                        </svg>-->
-                        <span><a class="add_to_discord_link" href="https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&scope=bot" target="_blank">Add to Discord</a></span>
+
+                        <span><a class="add_to_discord_link" href="hurb.gg/add" target="_blank">Add to Discord</a></span>
                     </button>
-                    <!--<button class="add_button_1">
-                        <img src="https://cdn.discordapp.com/attachments/765942853586124820/776337914539933726/Screen_Shot_2020-11-11_at_10.49.37_PM.png" style="vertical-align:middle;">
-                    </button>-->
+
                     <button class="features_button fade">
-                        <a class="features_link" href="#">Go to Dashboard</a>
+                        <a class="features_link" href="#">Open Dashboard</a>
                     </button>
                     <div class="login_prompt fade">Already added to your server? <a href="/">Login</a></div>
                 </div>
@@ -344,7 +277,7 @@ function showPage() {
                         </svg><br><br><br>
                         <span>High Level Moderation</span>
                         <p>Hurb is equipped with advanced moderation commands such as muting, tempmuting, modmuting (allows even admins to be muted), and channelmuting.</p>
-                        <a href="">Learn More</a>
+                        <a href="hurb.gg/commands">View commands</a>
                     </div>
                 </section>
                 <section class="feature-tab-economy" id="feature-economy">
@@ -364,7 +297,7 @@ function showPage() {
                         </svg><br><br><br>
                         <span>Bustling Economy</span>
                         <p>With gambling, donating, and even buying roles, Hurb has one of the best economy systems of any bot out there.</p>
-                        <a href="">Learn More</a>
+                        <a href="hurb.gg/commands">View commands</a>
                     </div>
                 </section>
                 <section class="feature-tab-auto" id="feature-auto">
@@ -384,7 +317,7 @@ function showPage() {
                         </svg><br><br><br>
                         <span>Auto Features</span>
                         <p>Hurb can scan every message for potential things you don't want, such as invites, links, or even bad words, not to mention the ability to search and react to certain words within messsages.</p>
-                        <a href="">Learn More</a>
+                        <a href="hurb.gg/commands">View commands</a>
                     </div>
                 </section>
                 <section class="feature-tab-nec" id="feature-nec">
@@ -397,7 +330,7 @@ function showPage() {
                         </svg><br><br><br>
                         <span>Animated Emojis</span>
                         <p>If you send a failed emoji from any server that Hurb is in, whether it be an animated emoji from your current server or a regular one from a server you aren't even in, Hurb can send the message for you from a bot that looks exactly like yourself, essentially granting you nitro. All for free!</p>
-                        <a href="">Learn More</a>
+                        <a href="hurb.gg/commands">View commands</a>
                     </div>
                 </section>
                 <section class="feature-tab-ranking" id="feature-ranking">
@@ -408,9 +341,9 @@ function showPage() {
                         <svg viewBox="0 0 24 24">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5742 3.61382C12.3973 3.54048 12.2034 3.5 12 3.5C11.7966 3.5 11.6027 3.54048 11.4258 3.61382C11.2489 3.68702 11.0832 3.79553 10.9393 3.93934L3.93934 10.9393C3.35355 11.5251 3.35355 12.4749 3.93934 13.0607C4.52513 13.6464 5.47487 13.6464 6.06066 13.0607L10.5 8.62132V19C10.5 19.8284 11.1716 20.5 12 20.5C12.8284 20.5 13.5 19.8284 13.5 19V8.62132L17.9393 13.0607C18.5251 13.6464 19.4749 13.6464 20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L13.0607 3.93934C12.9168 3.79553 12.7511 3.68702 12.5742 3.61382Z"/>
                         </svg><br><br><br>
-                        <span>Advanced Ranking System</span>
+                        <span>Advanced Ranking</span>
                         <p>Want a ranking system with built in antispam? Like to be able to customize your person rank card? Even wanted to set your progress bar to a bunch of walking ducks? Well, Hurb can do that all and more with its leveling system!</p>
-                        <a href="">Learn More</a>
+                        <a href="hurb.gg/commands">View commands</a>
                     </div>
                 </section>
                 <section class="feature-tab-fun" id="feature-fun">
@@ -423,7 +356,7 @@ function showPage() {
                         </svg><br><br><br>
                         <span>Great random stuff</span>
                         <p>Hurb also has lots of random, quirky but fun commands such as searching for gifs, playing hangman, and killing other users.</p>
-                        <a href="">Learn More</a>
+                        <a href="hurb.gg/commands">View commands</a>
                     </div>
                 </section>
                 <section class="feature-tab-voice" id="feature-voice">
@@ -436,7 +369,7 @@ function showPage() {
                         </svg><br><br><br>
                         <span>Amazing voice commands</span>
                         <p>Hurb also has some crystal-clear voice commands that makes talking in the VC a smooth go!</p>
-                        <a type="disabled" href="">(coming soon)</a>
+                        <a href="#">(coming soon)</a>
                     </div>
                 </section>
                 <section class="more-coming-soon">
@@ -457,56 +390,7 @@ function showPage() {
                 </section>
             </div>
 
-            <!--<div class="features">
-                <section class="feature_1">
-                    <img class="graphic_1" src="{{ url_for('static', filename='images/Moderation_s.svg') }}" class="img-1 lazy">
-                    <div class="feature_text_1">
-                        <h4 class="h_text_1">High level Moderation</h4>
-                        <p class="text_1">
-                        Hurb is equipped with advanced moderation commands such as muting, tempmuting, modmuting (allows even admins to be muted), and channelmuting.</p>
-                    </div>
-                </section>
-                <section class="feature_2">
-                    <img class="graphic_2" src="{{ url_for('static', filename='images/Economy_s.svg') }}" class="img-2 lazy">
-                    <div class="feature_text_2">
-                        <h4 class="h_text_2">Bustling economy</h4>
-                        <p class="text_2">With gambling, donating, and even buying roles, hurb has one of the best economy systems of any bot out there.</p>
-                    </div>
-                </section>
-                <section class="feature_3">
-                    <img class="graphic_3" src="{{ url_for('static', filename='images/Auto_s.svg') }}" class="img-3 lazy">
-                    <div class="feature_text_3">
-                        <h4 class="h_text_3">Auto features</h4>
-                        <p class="text_3">Hurb can scan every message for potential things you don't want, such as invites, links, or even bad words, not to mention the ability to search and react to certain words within messsages.</p>
-                    </div>
-                </section>
-                <section class="feature_4">
-                    <img class="graphic_4" src="{{ url_for('static', filename='images/NEC_2.png') }}" class="img-4 lazy">
-                    <div class="feature_text_4">
-                        <h4 class="h_text_4">Animated emojis</h4>
-                        <p class="text_4">If you send a failed emoji from any server that Hurb is in, whether it be an animated emoji from your current server or a regular one from a server you aren't even in, Hurb can send the message for you from a bot that looks exactly like yourself, essentially granting you nitro. All for free!</p>
-                    </div>
-                </section>
-                <section class="feature_5">
-                    <img class="graphic_5" src="{{ url_for('static', filename='images/Ranking_s.svg') }}" class="img-5 lazy">
-                    <div class="feature_text_5">
-                        <h4 class="h_text_5">Advanced ranking system</h4>
-                        <p class="text_5">Want a ranking system with built in antispam? Like to be able to customize your person rank card? Even wanted to set your progress bar to a bunch of walking ducks? Well, Hurb can do that all and more with its leveling system!</p>
-                    </div>
-                </section>
-                <section class="feature_6">
-                    <img class="graphic_6" src="{{ url_for('static', filename='images/Fun_s.svg') }}" class="img-6 lazy">
-                    <div class="feature_text_6">
-                        <h4 class="h_text_6">Great random stuff</h4>
-                        <p class="text_6">Hurb also has lots of random, quirky but fun commands such as searching for gifs, playing hangman, and killing other users.</p>
-                    </div>
-                </section>
-            </div>
-            <div class="coming-soon" id="coming-soon">
-                <h1 class="h_cs fade">More coming soon</h1>
-                <p class="text_cs fade">Hurb is a work-in-progress bot that really cares about the community and wishes for the best of all its users.<br>If you have anything in mind that can help us develop Hurb and make it better, feel free to suggest it!</p>
-                <div class="cs_icons fade"></div>
-            </div>-->
+
             <div class="commands" id="commands">
                 <h1 class="h_cmds fade">Commands</h1>
                 <!--<h4 class="dtls_cmds">(hover for more details)</h4>-->
@@ -525,21 +409,6 @@ function showPage() {
                     <p class="text-9">%modmute</p>
                     <p class="text-10">%balance</p>
                     </svg>
-
-
-                    <!--<div class="cmd_mute"></div>
-                    <div class="cmd_kick"></div>
-                    <div class="cmd_unmute"></div>
-                    <div class="cmd_leaderboard"></div>
-                    <div class="cmd_prefix"></div>
-                    <div class="cmd_warn"></div>
-                    <div class="cmd_catto"></div>
-                    <div class="cmd_birb"></div>
-                    <div class="cmd_rename"></div>
-                    <div class="cmd_purge"></div>
-                    <div class="cmd_joke"></div>
-                    <div class="cmd_meme"></div>
-                    <div class="cmd_topic"></div>-->
 
                 </div>
                 <p class="text_cmds fade">
@@ -560,7 +429,7 @@ function showPage() {
                         <h6 class="s_servers fade">servers</h6>
                     </div>
                 </div>
-                <button class="add_button_2 fade"><span><a class="add_to_discord_link" href="https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&scope=bot">Add to Discord</a></span></button>
+                <button class="add_button_2 fade"><span><a class="add_to_discord_link" href="hurb.gg/add">Add to Discord</a></span></button>
             </div>
             <div class="footer" id="bottom">
                 <div class="hurb">
@@ -571,25 +440,25 @@ function showPage() {
                 </div>
                 <div class="the_project">
                     <p class="footer_h"><b>The Project</b></p>
-                    <p class="footer_p"><a class="footer_link" href="/about">About us</a></p>
-                    <p class="footer_p"><a class="footer_link" href="/#features">All Features</a></p>
-                    <p class="footer_p"><a class="footer_link" href="/status">Status</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/about">About</a></p>
+                    <p class="footer_p"><a class="footer_link" href="https://hurb.statuspage.io">Status</a></p>
                     <p class="footer_p"><a class="footer_link" href="/support">Support us</a></p>
+                    <p class="footer_p"><a class="footer_link" href="https://top.gg/bot/736283988628602960">Top.gg Page</a></p>
                     <p class="footer_p"><a class="footer_link" href="https://top.gg/bot/736283988628602960/vote">Vote on top.gg</a></p>
                 </div>
                 <div class="resources">
                     <p class="footer_h"><b>Resources</b></p>
                     <p class="footer_p"><a class="footer_link" href="/docs">Documentation</a></p>
                     <p class="footer_p"><a class="footer_link" href="/commands">All commands</a></p>
-                    <p class="footer_p"><a class="footer_link" href="/how-to">How-to's</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/knowledgebase">Knowledgebase</a></p>
                     <p class="footer_p"><a class="footer_link" href="https://discord.gg/JjJa2QAFp6">Support Server</a></p>
-                    <p class="footer_p"><a class="footer_link" href="https://top.gg/bot/736283988628602960">Top.gg Page</a></p>
+                    <p class="footer_p"><a class="footer_link" href="code">Source Code</a></p>
                 </div>
                 <div class="policies">
                     <p class="footer_h"><b>Policies</b></p>
-                    <p class="footer_p"><a class="footer_link" href="">Terms</a></p>
-                    <p class="footer_p"><a class="footer_link" href="">Privacy</a></p>
-                    <p class="footer_p"><a class="footer_link" href="">Acknowledgements</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/terms">Terms</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/privacy">Privacy</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/acknowledgements">Acknowledgements</a></p>
                 </div>
             </div>
         </div>
@@ -637,7 +506,9 @@ anime({
         </script>
 
 
-        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js">
+    //importing JQuery with a CDN
+</script>
 
 
         <script>
@@ -787,11 +658,16 @@ anime.timeline({loop: false})
 </script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js">
+    //importing the Waypoints library
+</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.2.4/scrollMonitor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.2.4/scrollMonitor.js">
+    //importing the ScrollMonitor library
+</script>
 
 <script>
+//ScrollMonitor demo (not yet implemented)
 var scrollMonitor = require("scrollmonitor");
 var myElement = document.getElementById("itemToWatch");
 

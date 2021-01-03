@@ -38,20 +38,6 @@
     <script src="{{ url_for('static', filename='lib/jquery.waypoints.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script type="text/javascript">
-$(window).scroll(function() {
-    $('.graphic_1').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-        $(this).addClass("ltr-anime");
-        }
-    });
-});
-
-$('.fade').css('visibility', 'hidden');
-    </script>
 
     <title>404: Page not found.</title>
     </head>
@@ -111,8 +97,8 @@ $('.fade').css('visibility', 'hidden');
             <img class="dropbtn" src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif" onclick="toggleDropdown()">
             <div class="dropdown_content">
                 <img src="https://i.pinimg.com/originals/bb/91/2e/bb912eec3e9305b74e8e79a637f2fd43.gif">
-                <span class="nickname">Titan#0415</span>
-                <span class="status">all it takes is a leap through time and a twist of fate.</span>
+                <span class="nickname">Name#0000</span>
+                <span class="status">sample (under active testing)</span>
                 <hr>
                 <a href="#">Go to Dashboard</a>
                 <a href="#">Log out</a>

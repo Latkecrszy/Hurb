@@ -1,17 +1,22 @@
 from flask import Flask, render_template, request, send_file, redirect
-import os, sys, requests, jinja2, json
+import os, sys, requests, jinja2, json, dotenv
 
+dotenv.load_dotenv()
+
+CLIENT_SECRET = os.environ.get('CLIENT_SECRET', None)
 
 app = Flask(__name__)
 
 
+
+
 @app.route('/')
 def landingpage():
-    try:
-        code = request.args.get('code')
+    code = request.args.get('code')
+    if code is not None:
         data = {
             'client_id': '736283988628602960',
-            'client_secret': 'ODzy9h_y8jpgXKlocqRQVGBe1k4IiTm8',
+            'client_secret': CLIENT_SECRET,
             'grant_type': 'authorization_code',
             'code': code,
             'redirect_uri': 'http://hurb.gg',
@@ -21,11 +26,7 @@ def landingpage():
             'Content-Type': 'application/x-www-form-urlencoded'
         }
         r = requests.post('%s/oauth2/token' % 'https://discord.com/api/oauth2/token', data=data, headers=headers)
-        r.raise_for_status()
-        return r.json()
-    except:
-        pass
-    # https://discord.com/api/oauth2/token
+        # https://discord.com/api/oauth2/token
     return render_template("index.html"), 200
 
 
@@ -46,8 +47,9 @@ def help():
 
 @app.route('/add')
 def add():
-    return redirect("https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&redirect_uri=https%3A%2F%2Fhurb.gg&scope=bot", code=302)
-
+    return redirect(
+        "https://discord.com/api/oauth2/authorize?client_id=736283988628602960&permissions=8&redirect_uri=https%3A%2F%2Fhurb.gg&scope=bot",
+        code=302)
 
 
 if __name__ == '__main__':

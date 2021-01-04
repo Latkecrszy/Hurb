@@ -9,11 +9,6 @@ app = Flask(__name__)
 def landingpage():
     try:
         code = request.args.get('code')
-        API_ENDPOINT = 'https://discord.com/api/v6'
-        CLIENT_ID = '332269999912132097'
-        CLIENT_SECRET = '937it3ow87i4ery69876wqire'
-        REDIRECT_URI = 'https://nicememe.website'
-
         data = {
             'client_id': '736283988628602960',
             'client_secret': 'ODzy9h_y8jpgXKlocqRQVGBe1k4IiTm8',

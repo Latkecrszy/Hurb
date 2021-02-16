@@ -52,6 +52,34 @@ def add():
         code=302)
 
 
+@app.route('/knowledgebase')
+def knowledgebase():
+    return redirect(
+        "https://app.spaceli.io/space/1Hx_-16-CuC0jhL5LoMicpzFlrUZQNqNF",
+        code=302)
+
+
+@app.route('/terms')
+def terms():
+    return redirect(
+        "https://app.spaceli.io/space/1Hx_-16-CuC0jhL5LoMicpzFlrUZQNqNF/page/1yXp_4YckAgid3JY2L4tzozHA8eLIFSR_28xQWkkwaKY",
+        code=302)
+
+
+@app.route('/privacy')
+def privacy():
+    return redirect(
+        "https://app.spaceli.io/space/1Hx_-16-CuC0jhL5LoMicpzFlrUZQNqNF/page/1tWH2o8FLksfIQGOl5UF_ydW92bXqvlzAfm5ajeBIB74",
+        code=302)
+
+
+@app.route('/acknowledgements')
+def acknowledgements():
+    return redirect(
+        "https://app.spaceli.io/space/1Hx_-16-CuC0jhL5LoMicpzFlrUZQNqNF/page/1dtnmYmYxz4bG4160uO8DlC0Z7D2cClqvLXWPAXG3uLY",
+        code=302)
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5001))
     app.run(host='0.0.0.0', port=port, use_reloader=True)

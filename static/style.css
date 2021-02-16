@@ -117,10 +117,11 @@ body{
 }
 
 .header svg{
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
     fill: #FFFFFF;
     filter: invert(100%) sepia(100%) saturate(13%) hue-rotate(237deg) brightness(104%) contrast(104%);
-    transition: filter 1s;
+    transition: filter 0.5s;
 }
 
 .header svg:hover{
@@ -164,7 +165,7 @@ body{
 }
 
 .header a{
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: none;
     line-height: 25px;
     padding: 15px;
@@ -239,7 +240,7 @@ body{
     font-family: 'Poppins';
     font-weight: 800;
     display: inline-flex;
-    top: 14px;
+    top: 17px;
     left: 70px;
     /* margin-bottom: 10px; */
     position: absolute;
@@ -252,7 +253,7 @@ body{
     font-weight: 500;
     display: block;
     position: absolute;
-    top: 40px;
+    top: 42px;
     left: 70px;
     width: 70%;
 }
@@ -680,7 +681,7 @@ body{
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: regular;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 130.5%;
     cursor: default;
 

@@ -11,24 +11,19 @@
       gtag('config', 'G-WPXHW53973');
       </script>
     <!---Favicons start-->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='Favicons/apple-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='Favicons/apple-icon-60x60.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='Favicons/apple-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='Favicons/apple-icon-76x76.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='Favicons/apple-icon-114x114.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='Favicons/apple-icon-120x120.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='Favicons/apple-icon-144x144.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='Favicons/apple-icon-152x152.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='Favicons/apple-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='Favicons/android-icon-192x192.png') }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='Favicons/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='Favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='Favicons/favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='Favicons/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ url_for('static', filename='Favicons/manifest.json') }}">
-    <meta name="msapplication-TileColor" content="#FF0066">
-    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='Favicons/ms-icon-144x144.png') }}">
-    <meta name="theme-color" content="#FF0066">
+    <link rel="manifest" href="{{ url_for('static', filename='Favicons/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url_for('static', filename='Favicons/safari-pinned-tab.svg') }}" color="#ff0066">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicons/favicon.ico') }}">
+    <meta name="apple-mobile-web-app-title" content="Hurb">
+    <meta name="application-name" content="Hurb">
+    <meta name="msapplication-TileColor" content="#ff0066">
+    <meta name="theme-color" content="#050507">
     <!---Favicons end-->
+
     <meta property="og:site_name" content="Hurb">
     <meta property="og:url" content="http://hurb.gg">
     <meta property="og:title" content="Hurb | Home">
@@ -78,40 +73,11 @@ function showPage() {
             </div>
             <header class="header">
                 <a href="/">
-                    <svg width="157" height="41" viewBox="0 0 157 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                        <path d="M12.0222 12.2521C12.67 11.7102 13.6584 11.8892 14.0649 12.6296L14.7929 13.9558C15.1734 14.6488 14.8316 15.5206 14.0853 15.7815V15.7815C12.9482 16.1791 12.933 17.7966 14.073 18.1859V18.1859C14.8247 18.4426 15.1581 19.3193 14.7668 20.0106L13.8978 21.5458C13.4968 22.2543 12.5447 22.4137 11.9335 21.8759V21.8759C11.0171 21.0694 9.59658 21.8784 9.82713 23.0772V23.0772C9.97904 23.8672 9.37373 24.6 8.56931 24.6H6.97451C6.17627 24.6 5.57394 23.8742 5.71886 23.0893V23.0893C5.93989 21.892 4.51844 21.0914 3.61306 21.9054V21.9054C3.0093 22.4481 2.0588 22.296 1.6546 21.5919L0.711738 19.9495C0.321003 19.2689 0.644512 18.4007 1.38536 18.1417L1.44044 18.1224C2.55429 17.733 2.53889 16.1524 1.41766 15.7848V15.7848C0.681842 15.5435 0.347421 14.6921 0.722363 14.0146L1.49215 12.6236C1.90065 11.8854 2.88854 11.7091 3.53564 12.2504V12.2504C4.49781 13.0553 5.95512 12.2184 5.71269 10.9876V10.9876C5.55073 10.1654 6.1801 9.39997 7.01815 9.39997H8.54177C9.37983 9.39997 10.0092 10.1654 9.84724 10.9877V10.9877C9.60481 12.2184 11.06 13.057 12.0222 12.2521V12.2521Z" fill="url(#paint0_linear)"/>
-
-                        <path d="M40.8271 5.92287C41.1428 6.32507 41.6257 6.55997 42.137 6.55997V6.55997C43.5546 6.55997 44.3238 4.90149 43.4081 3.81931L41.4863 1.54808C41.1063 1.09898 40.5479 0.839966 39.9596 0.839966H37.5549C36.955 0.839966 36.3869 1.10922 36.007 1.57349L34.1338 3.86292C33.2516 4.94114 34.0188 6.55997 35.4119 6.55997V6.55997C35.9144 6.55997 36.3896 6.33112 36.703 5.93821L38.6899 3.44664C38.7134 3.41715 38.7491 3.39997 38.7869 3.39997V3.39997C38.8249 3.39997 38.8609 3.41745 38.8844 3.4474L40.8271 5.92287Z" fill="url(#paint1_linear)"/>
-
-                        <path d="M93.982 13.7921C94.2153 12.8586 93.8587 11.826 93.0465 11.31L91.2708 10.1817C90.8443 9.91063 90.3316 9.81628 89.83 9.87828C88.9085 9.99222 87.8578 10.04 86.8072 10.04H67.6871C66.804 10.04 65.9473 10.0223 65.1545 9.9953C63.9095 9.95288 62.9006 11.018 62.9477 12.2628C62.9603 12.5962 62.9671 12.9249 62.9671 13.24V21.68C62.9671 22.0501 62.9578 22.4061 62.9406 22.7641C62.884 23.9435 63.7893 24.96 64.97 24.96H66.4443C67.625 24.96 68.5514 23.9416 68.5098 22.7616C68.4938 22.3085 68.4872 21.9245 68.4872 21.68V17C68.4872 15.8954 69.3826 15 70.4872 15H85.4934C86.6708 15 87.5983 16.0133 87.4155 17.1765C86.85 20.7749 85.7119 24.3031 84.0471 27C81.5293 30.984 77.1067 33.9014 72.6816 35.5902C71.2322 36.1434 70.7051 38.0425 71.7923 39.1492L72.9177 40.2946C73.4606 40.8472 74.2758 41.0414 74.9971 40.7589C80.8797 38.4545 85.8549 34.632 88.9671 29.72C92.0871 24.88 93.0071 19.08 93.7271 14.88C93.7781 14.6423 93.8722 14.2318 93.982 13.7921Z" fill="url(#paint2_linear)"/>
-
-                        <path d="M120.827 5.92287C121.143 6.32507 121.626 6.55997 122.137 6.55997V6.55997C123.555 6.55997 124.324 4.90149 123.408 3.81931L121.486 1.54808C121.106 1.09898 120.548 0.839966 119.96 0.839966H117.555C116.955 0.839966 116.387 1.10922 116.007 1.57349L114.134 3.86292C113.252 4.94114 114.019 6.55997 115.412 6.55997V6.55997C115.914 6.55997 116.39 6.33112 116.703 5.93821L118.69 3.44664C118.713 3.41715 118.749 3.39997 118.787 3.39997V3.39997C118.825 3.39997 118.861 3.41746 118.884 3.4474L120.827 5.92287Z" fill="url(#paint3_linear)"/>
-
-                        <path d="M153.389 12.2522C154.037 11.7102 155.026 11.8892 155.432 12.6296L156.16 13.9558C156.541 14.6488 156.199 15.5206 155.452 15.7815V15.7815C154.315 16.1791 154.3 17.7966 155.44 18.1859V18.1859C156.192 18.4426 156.525 19.3193 156.134 20.0106L155.265 21.5458C154.864 22.2543 153.912 22.4137 153.301 21.8759V21.8759C152.384 21.0694 150.964 21.8784 151.194 23.0772V23.0772C151.346 23.8672 150.741 24.6 149.937 24.6H148.342C147.543 24.6 146.941 23.8742 147.086 23.0893V23.0893C147.307 21.892 145.886 21.0914 144.98 21.9054V21.9054C144.376 22.4481 143.426 22.296 143.022 21.5919L142.079 19.9495C141.688 19.2689 142.012 18.4007 142.753 18.1417L142.808 18.1224C143.921 17.733 143.906 16.1524 142.785 15.7848V15.7848C142.049 15.5435 141.715 14.6921 142.09 14.0146L142.859 12.6236C143.268 11.8854 144.256 11.7091 144.903 12.2504V12.2504C145.865 13.0553 147.322 12.2184 147.08 10.9876V10.9876C146.918 10.1654 147.547 9.39997 148.385 9.39997H149.909C150.747 9.39997 151.376 10.1654 151.214 10.9877V10.9877C150.972 12.2184 152.427 13.057 153.389 12.2522V12.2522Z" fill="url(#paint4_linear)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear" x1="-3" y1="18.5" x2="160" y2="18.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EB5757"/>
-                        <stop offset="1" stop-color="#402281"/>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear" x1="-3" y1="18.5" x2="160" y2="18.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EB5757"/>
-                        <stop offset="1" stop-color="#402281"/>
-                        </linearGradient>
-                        <linearGradient id="paint2_linear" x1="-3" y1="18.5" x2="160" y2="18.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EB5757"/>
-                        <stop offset="1" stop-color="#402281"/>
-                        </linearGradient>
-                        <linearGradient id="paint3_linear" x1="-3" y1="18.5" x2="160" y2="18.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EB5757"/>
-                        <stop offset="1" stop-color="#402281"/>
-                        </linearGradient>
-                        <linearGradient id="paint4_linear" x1="-3" y1="18.5" x2="160" y2="18.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EB5757"/>
-                        <stop offset="1" stop-color="#402281"/>
-                        </linearGradient>
-                        </defs>
+                    <svg width="117" height="37" viewBox="0 0 117 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C7.79086 0 6 1.79086 6 4V7H1.5C0.671573 7 0 7.67157 0 8.5C0 9.32843 0.671574 10 1.5 10H6V13C6 15.2091 7.79086 17 10 17H29C31.2091 17 33 15.2091 33 13V10H36.5C37.3284 10 38 9.32843 38 8.5C38 7.67157 37.3284 7 36.5 7H33V4C33 1.79086 31.2091 0 29 0H10ZM35.7764 23H3.22361C0.719416 23 -0.670192 25.8993 0.898415 27.8514C10.4507 39.7387 28.5493 39.7387 38.1016 27.8514C39.6702 25.8993 38.2806 23 35.7764 23ZM107.72 12.992C107 13.376 106.448 13.88 106.064 14.504V8.23999H101.96V26H106.064V24.128C106.464 24.752 107.016 25.256 107.72 25.64C108.424 26.008 109.248 26.192 110.192 26.192C111.296 26.192 112.296 25.912 113.192 25.352C114.088 24.776 114.792 23.968 115.304 22.928C115.832 21.872 116.096 20.656 116.096 19.28C116.096 17.904 115.832 16.696 115.304 15.656C114.792 14.616 114.088 13.816 113.192 13.256C112.296 12.696 111.296 12.416 110.192 12.416C109.264 12.416 108.44 12.608 107.72 12.992ZM111.056 16.88C111.632 17.456 111.92 18.256 111.92 19.28C111.92 20.304 111.632 21.12 111.056 21.728C110.48 22.32 109.784 22.616 108.968 22.616C108.152 22.616 107.456 22.32 106.88 21.728C106.32 21.136 106.04 20.328 106.04 19.304C106.04 18.28 106.32 17.472 106.88 16.88C107.456 16.288 108.152 15.992 108.968 15.992C109.8 15.992 110.496 16.288 111.056 16.88ZM66.08 26V9.15199H61.976V15.752H55.592V9.15199H51.488V26H55.592V19.064H61.976V26H66.08ZM84.4267 26V12.608H80.3227V19.88C80.3227 20.776 80.0907 21.472 79.6267 21.968C79.1627 22.464 78.5307 22.712 77.7307 22.712C76.9467 22.712 76.3227 22.464 75.8587 21.968C75.3947 21.472 75.1627 20.776 75.1627 19.88V12.608H71.0827V20.432C71.0827 21.6 71.2987 22.616 71.7307 23.48C72.1627 24.344 72.7707 25.008 73.5547 25.472C74.3387 25.92 75.2427 26.144 76.2667 26.144C77.1307 26.144 77.9147 25.968 78.6187 25.616C79.3387 25.248 79.9067 24.768 80.3227 24.176V26H84.4267ZM93.6386 14.84C94.1186 14.104 94.7186 13.528 95.4386 13.112C96.1586 12.68 96.9586 12.464 97.8386 12.464V16.808H96.7106C95.6866 16.808 94.9186 17.032 94.4066 17.48C93.8946 17.912 93.6386 18.68 93.6386 19.784V26H89.5346V12.608H93.6386V14.84Z" fill="#FF0066"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.487 34.103C33.3316 32.63 35.9362 30.5461 38.1016 27.8514C39.6702 25.8993 38.2806 23 35.7764 23H20.2592C22.0902 27.8999 25.7879 31.8893 30.487 34.103ZM19.0246 17H29C31.2091 17 33 15.2091 33 13V10H36.5C37.3284 10 38 9.32843 38 8.5C38 7.67157 37.3284 7 36.5 7H33V4C33 1.79086 31.2091 0 29 0H26.998C22.1414 3.64892 19 9.4576 19 16C19 16.3353 19.0083 16.6687 19.0246 17ZM59 16C59 17.0419 58.9203 18.0651 58.7668 19.064H55.592V26H51.488V9.15199H55.592V15.752H58.9985C58.9995 15.8345 59 15.9172 59 16ZM82.9989 26H84.4267V12.608H80.6532C80.5248 13.0279 80.4144 13.4557 80.3227 13.8904V19.88C80.3227 19.9509 80.3213 20.0205 80.3184 20.0888C80.7752 22.2711 81.7063 24.2791 82.9989 26ZM108.913 22.6155C108.508 23.6181 107.998 24.5668 107.397 25.4481C106.845 25.093 106.401 24.653 106.064 24.128V26H101.96V8.23999H106.064V14.504C106.448 13.88 107 13.376 107.72 12.992C108.202 12.7348 108.731 12.5638 109.307 12.4788C109.676 13.6503 109.906 14.8839 109.977 16.1601C109.666 16.048 109.33 15.992 108.968 15.992C108.152 15.992 107.456 16.288 106.88 16.88C106.32 17.472 106.04 18.28 106.04 19.304C106.04 20.328 106.32 21.136 106.88 21.728C107.443 22.3067 108.121 22.6026 108.913 22.6155ZM95.4386 13.112C94.7186 13.528 94.1186 14.104 93.6386 14.84V12.608H89.5346V26H93.6386V19.784C93.6386 18.68 93.8946 17.912 94.4066 17.48C94.9186 17.032 95.6866 16.808 96.7106 16.808H97.8386V12.464C96.9586 12.464 96.1586 12.68 95.4386 13.112Z" fill="#513CFF"/>
                     </svg>
+
 
                 </a>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -156,9 +122,9 @@ function showPage() {
                     </button>
 
                     <button class="features_button fade">
-                        <a class="features_link" href="#">Open Dashboard</a>
+                        <a class="features_link" href="#">Dashboard</a>
                     </button>
-                    <div class="login_prompt fade">Already added to your server? <a href="/">Login</a></div>
+                    <div class="login_prompt fade">Already added to your server? <a href="/">Login (under-construction)</a></div>
                 </div>
             </div>
             </div>
@@ -269,7 +235,7 @@ function showPage() {
             <div class="feature-tabs">
                 <section class="feature-tab-moderation" id="feature-moderation">
                     <div class="ft-graphic-l column">
-                        <img src="../static/images/Moderation_s.svg">
+                        <img src="../static/images/Moderation_new.svg">
                     </div>
                     <div class="section-r column">
                         <svg viewBox="0 0 24 24">
@@ -282,7 +248,7 @@ function showPage() {
                 </section>
                 <section class="feature-tab-economy" id="feature-economy">
                     <div class="ft-graphic-r column">
-                        <img src="../static/images/Economy_s.svg">
+                        <img src="../static/images/Economy_new.svg">
                     </div>
                     <div class="section-l column">
                         <svg viewBox="0 0 24 24">
@@ -302,7 +268,7 @@ function showPage() {
                 </section>
                 <section class="feature-tab-auto" id="feature-auto">
                     <div class="ft-graphic-l column">
-                        <img src="../static/images/Auto_s.svg">
+                        <img src="../static/images/Auto_new.svg">
                     </div>
                     <div class="section-r column">
                         <svg viewBox="0 0 24 24">
@@ -322,7 +288,7 @@ function showPage() {
                 </section>
                 <section class="feature-tab-nec" id="feature-nec">
                     <div class="ft-graphic-r column">
-                        <img src="../static/images/Moderation_s.svg">
+                        <img src="../static/images/Moderation_new.svg">
                     </div>
                     <div class="section-l column">
                         <svg viewBox="0 0 24 24">
@@ -335,7 +301,7 @@ function showPage() {
                 </section>
                 <section class="feature-tab-ranking" id="feature-ranking">
                     <div class="ft-graphic-l column">
-                        <img src="../static/images/Ranking_s.svg">
+                        <img src="../static/images/Ranking_new.svg">
                     </div>
                     <div class="section-r column">
                         <svg viewBox="0 0 24 24">
@@ -348,7 +314,7 @@ function showPage() {
                 </section>
                 <section class="feature-tab-fun" id="feature-fun">
                     <div class="ft-graphic-r column">
-                        <img src="../static/images/Fun_s.svg">
+                        <img src="../static/images/Fun_new.svg">
                     </div>
                     <div class="section-l column">
                         <svg viewBox="0 0 24 24">
@@ -361,7 +327,7 @@ function showPage() {
                 </section>
                 <section class="feature-tab-voice" id="feature-voice">
                     <div class="ft-graphic-l column">
-                        <img src="../static/images/Moderation_s.svg">
+                        <img src="../static/images/Voice_new.svg">
                     </div>
                     <div class="section-r column">
                         <svg viewBox="0 0 24 24">
@@ -421,20 +387,20 @@ function showPage() {
                     <h1 class="h_join fade">Join the party!</h1>
                     <p class="text_join fade">(<s>pizza</s> cool commands included)</p>
                     <div class="users">
-                        <h4 class="h_users fade">88303</h4>
+                        <h4 class="h_users fade">93210</h4>
                         <h6 class="s_users fade">users</h6>
                     </div>
                     <div class="servers">
-                        <h4 class="h_servers fade">95</h4>
+                        <h4 class="h_servers fade">111</h4>
                         <h6 class="s_servers fade">servers</h6>
                     </div>
                 </div>
-                <button class="add_button_2"><span><a class="add_to_discord_link" href="hurb.gg/add">Add to Discord</a></span></button>
+                <button class="add_button_2"><span><a class="add_to_discord_link" href="/add">Add to Discord</a></span></button>
             </div>
             <div class="footer" id="bottom">
                 <div class="hurb">
                     <h3 class="tglbtdia-footer">The Great Little Bot that Does it All</h3>
-                    <p class="copyright">©️ 2020 Hurb</p>
+                    <p class="copyright">©️ 2021 Hurb</p>
                     <p class="credits_1">Bot developed by Latkecrszy#7777</p>
                     <p class="credits_2">Website developed by Titan#0415</p>
                 </div>
@@ -452,7 +418,7 @@ function showPage() {
                     <p class="footer_p"><a class="footer_link" href="/commands">All commands</a></p>
                     <p class="footer_p"><a class="footer_link" href="/knowledgebase">Knowledgebase</a></p>
                     <p class="footer_p"><a class="footer_link" href="https://discord.gg/JjJa2QAFp6">Support Server</a></p>
-                    <p class="footer_p"><a class="footer_link" href="code">Source Code</a></p>
+                    <p class="footer_p"><a class="footer_link" href="/code">Source Code</a></p>
                 </div>
                 <div class="policies">
                     <p class="footer_h"><b>Policies</b></p>
